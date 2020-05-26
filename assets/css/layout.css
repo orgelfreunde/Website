@@ -512,6 +512,19 @@ td {
     align-items: center;
 }
 
+.verfasser {
+    font-style: italic;
+    text-align: right;
+}
+
+.color-dark {
+    color: #222 !important;
+}
+
+.gutachten {
+    width: 100%;
+}
+
 @media screen and (max-width: 375px) {
     iframe {
         width: 100%;
