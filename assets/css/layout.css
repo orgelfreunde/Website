@@ -17,14 +17,14 @@ h3 {
 }
 
 .bg-img-organ {
-    background-image: url('https://www.lutherorgel-plauen.de/test/assets/img/banner-main-mobile.jpg');
+    background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main-mobile.jpg');
     background-size: cover;
     height: 90vh;
 }
 
 @media screen and (min-width: 768px) {
     .bg-img-organ {
-        background-image: url('https://www.lutherorgel-plauen.de/test/assets/img/banner-main-tablet.jpg');
+        background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main-tablet.jpg');
         height: 94vh;
         border-bottom: 4px solid #e2cd9f;
     }
@@ -32,7 +32,7 @@ h3 {
 
 @media screen and (min-width: 1200px) {
     .bg-img-organ {
-        background-image: url('https://www.lutherorgel-plauen.de/test/assets/img/banner-main.jpg');
+        background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main.jpg');
         background-size: cover;
         height: 600px;
     }
@@ -179,17 +179,17 @@ h3 {
 }
 
 .service {
-    background-image: url('https://www.lutherorgel-plauen.de/test/assets/svg/Lutherkirche-stil.svg');
+    background-image: url('https://www.lutherorgel-plauen.de/assets/svg/Lutherkirche-stil.svg');
 }
 
 @media screen and (min-width: 1200px) {
     .service {
-        background-image: url('https://www.lutherorgel-plauen.de/test/assets/svg/Lutherkirche-stil-2.svg');
+        background-image: url('https://www.lutherorgel-plauen.de/assets/svg/Lutherkirche-stil-2.svg');
     }
 }
 
 .mini-gallery {
-    background-image: url('https://www.lutherorgel-plauen.de/test/assets/svg/Orgel-stil.svg');
+    background-image: url('https://www.lutherorgel-plauen.de/assets/svg/Orgel-stil.svg');
 }
 
 .introduction,
@@ -222,7 +222,7 @@ footer {
 footer {
     background-color: #b34041;
     color: #e2cd9f;
-    background-image: url('https://www.lutherorgel-plauen.de/test/assets/svg/Orgel-stil.svg');
+    background-image: url('https://www.lutherorgel-plauen.de/assets/svg/Orgel-stil.svg');
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 4px solid #e2cd9f;
@@ -373,17 +373,13 @@ iframe {
 }
 
 .donation-details {
-    background-image: url('https://www.lutherorgel-plauen.de/test/assets/img/organ-pipes.jpg');
+    background-image: url('https://www.lutherorgel-plauen.de/assets/img/organ-pipes.jpg');
     background-repeat: no-repeat;
     border-top: 4px solid #e2cd9f;
     border-bottom: 4px solid #e2cd9f;
+    background-size: cover;
 }
 
-@media screen and (min-width: 768) {
-    .donation-details {
-        background-size: cover;
-    }
-}
 .donation-details .container-xl {
     background: white;
     color: black;
