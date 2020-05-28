@@ -377,7 +377,12 @@ iframe {
     background-repeat: no-repeat;
     border-top: 4px solid #e2cd9f;
     border-bottom: 4px solid #e2cd9f;
-    background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .donation-details {
+        background-size: cover;
+    }
 }
 
 .donation-details .container-xl {
@@ -519,6 +524,84 @@ td {
 
 .gutachten {
     width: 100%;
+}
+
+.spendenformular {
+    background-color: white !important;
+}
+
+.spendenkonto {
+    border: 1px solid lightgrey;
+}
+
+.spendenkonto-informationen {
+    border: 1px solid lightgrey;
+    padding-left: 1em;
+}
+
+form {
+    margin: 0px auto;
+}
+
+@media screen and (min-width: 1200px) {
+    form {
+        width: 900px;
+    }
+}
+
+.unterschrift {
+    margin-top: 2em;
+}
+
+.unterschrift.col:last-child {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid lightgrey;
+    background-color: #e9ecef;
+}
+
+.einmalige-spende {
+    width: 4em;
+    text-align: right;
+    background-color: #e9ecef;
+}
+
+.patenschaft_betrag_items {
+    margin-top: 0.5em;
+}
+
+.patenschaft_betrag {
+    background-color: #e9ecef;
+    margin-bottom: 4px;
+    height: 2em;
+    padding-left: 1em;
+    line-height: 2em;
+}
+
+.send-button {
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-hinweis {
+    font-size: 1rem;
+}
+
+.patenschaft-label {
+    display: initial !important;
+}
+
+.auswahl_optionen .col-md-4 {
+    margin: 4px 0px;
 }
 
 @media screen and (max-width: 375px) {
