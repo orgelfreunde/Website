@@ -16,6 +16,10 @@ h3 {
     margin-bottom: 16px;
 }
 
+.organ-history-header {
+    margin: 6em 1em;
+}
+
 .bg-img-organ {
     background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main-mobile.jpg');
     background-size: cover;
@@ -35,6 +39,21 @@ h3 {
         background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main.jpg');
         background-size: cover;
         height: 600px;
+    }
+}
+
+.bg-img-assessment {
+    background-image: url('https://www.lutherorgel-plauen.de/assets/img/orgelakte-banner-mobile.jpg');
+    background-size: cover;
+    border-bottom: 4px solid #e2cd9f;
+    height: 50vh;
+}
+
+@media screen and (min-width: 768px) {
+    .bg-img-assessment {
+        background-image: url('https://www.lutherorgel-plauen.de/assets/img/orgelakte-banner.jpg');
+        margin-bottom: 2em;
+        height: 30em;
     }
 }
 
@@ -602,6 +621,10 @@ input[type="tel"] {
 
 .auswahl_optionen .col-md-4 {
     margin: 4px 0px;
+}
+
+.table-of-contents {
+    margin: 3em 0em;
 }
 
 @media screen and (min-width: 768px) {
