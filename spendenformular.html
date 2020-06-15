@@ -41,7 +41,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Veranstaltungen</a>
+                    <a class="nav-link" href="veranstaltungen.html">Veranstaltungen</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -85,7 +85,7 @@
                     <input type="checkbox" name="einmalige_spende">
                     <span id="einmalige_spende">Ja, ich/wir möchte(n) den Neubau der Orgel in der Lutherkirche zu Plauen mit 
                     einer einmaligen Spende unterstützen. Den Betrag von 
-                    <input type="text" name="betrag" placeholder="0" class="einmalige-spende"> € werde(n) ich/wir auf das Konto der Ev.-Luth.
+                    <input type="text" name="einmalige_spende_betrag" placeholder="0" class="einmalige-spende"> € werde(n) ich/wir auf das Konto der Ev.-Luth.
                     Lutherkirche Plauen, Zahlungsgrund: Orgel überweisen.</span>
                 </div>
 
@@ -125,9 +125,15 @@
                     <label for="auswahl_wunschorgelpfeife" class="patenschaft-label">Dies ist meine/unsere Wunschorgelpfeife:</label>
                     <div class="auswahl_optionen">
                         <div class="form-row">
-                            <div class="col-md-4"><input type="text" name="abc" class="form-control" placeholder="Ton"></div>
-                            <div class="col-md-4"><input type="text" name="abc" class="form-control" placeholder="Register"></div>
-                            <div class="col-md-4"><input type="text" name="abc" class="form-control" placeholder="Werk"></div>
+                            <div class="col-md-4">
+                                <input type="text" name="auswahl_wunschorgelpfeife_ton" class="form-control" placeholder="Ton">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" name="auswahl_wunschorgelpfeife_register" class="form-control" placeholder="Register">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" name="auswahl_wunschorgelpfeife_werk" class="form-control" placeholder="Werk">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,7 +156,7 @@
                     <div class="form-group">
                         <input type="checkbox" name="geschenk">
                         <span id="geschenk">Die Patenschaft dieser Orgelpfeife ist ein Geschenk für 
-                        <input type="text" name="abc" class="form-control"> Bitte tragen Sie diesen Namen in die Patenschafts-Urkunde ein.</span>
+                        <input type="text" name="name_geschenk" class="form-control"> Bitte tragen Sie diesen Namen in die Patenschafts-Urkunde ein.</span>
                     </div>
                 </div>
 
@@ -218,9 +224,6 @@
                         <div class="form-group col-md-6">
                             <div>
                                 <input type="text" name="abc" class="form-control"> <span>Ort/Datum</span>
-                            </div>
-                            <div>
-                                <input type="text" name="abc" class="form-control"> <span>Unterschrift</span>
                             </div>
                         </div>
                         <div class="form-group col-md-6">
