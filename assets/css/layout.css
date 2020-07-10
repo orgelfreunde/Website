@@ -183,6 +183,7 @@ h3 {
     margin: 2em 0;
 }
 
+.veranstaltung a,
 .service a {
     color: #e2cd9f;
 }
@@ -206,6 +207,58 @@ h3 {
         background-image: url('https://www.lutherorgel-plauen.de/assets/svg/Lutherkirche-stil-2.svg');
     }
 }
+
+.veranstaltung,
+.service {
+    height: 860px;
+}
+
+@media screen and (min-width: 768px) {
+    .veranstaltung,
+    .service {
+        height: 740px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .veranstaltung,
+    .service {
+        height: 540px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .veranstaltung,
+    .service {
+        height: 420px;
+    }
+}
+
+.veranstaltung {
+    border-top: 4px solid #e2cd9f;
+    border-bottom: 4px solid #e2cd9f;
+    background-color: grey;
+    color: white;
+}
+
+.veranstaltung img {
+    width: 100%;
+    display: block;
+    margin: 0em auto;
+}
+
+@media screen and (min-width: 768px) {
+    .veranstaltung img {
+        width: 70% !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .veranstaltung img {
+        width: 100% !important;
+    }
+}
+
 
 .mini-gallery {
     background-image: url('https://www.lutherorgel-plauen.de/assets/svg/Orgel-stil.svg');
@@ -234,6 +287,7 @@ h3 {
 .spenden-info,
 .mini-gallery,
 .service,
+.veranstaltung,
 footer {
     padding: 2em 0em 2em 0em;
 }
@@ -376,11 +430,19 @@ iframe {
     border: 0px;
 }
 
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    iframe {
+        border: 0px;
+        width: 100%;
+    }
+}
+
 .youtube {
     display: flex;
     justify-content: center;
 }
 
+.events-channel-btn,
 .youtube-channel-btn {
     margin: 1em 0em;
 }
