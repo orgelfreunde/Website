@@ -277,6 +277,10 @@ h3 {
     box-shadow: 2px 2px 4px #777;
 }
 
+.card:hover {
+    background-color: rgba(226, 205, 159, 0.1);
+}
+
 .cards,
 .introduction,
 .content-first,
@@ -409,6 +413,10 @@ footer .container-xl .row .col-md-4 {
 .img-3,
 .img-4 {
     display: none;
+}
+
+.col-md-4 a {
+    text-decoration: none;
 }
 
 .card img {
