@@ -283,10 +283,10 @@ h3 {
 
 .card {
     padding-top: 1em;
+    transition: box-shadow 1s ease;
 }
 
 .card:hover {
-    background-color: rgba(226, 205, 159, 0.1);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
 }
 
