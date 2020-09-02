@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 p {
     font-size: 1.25rem;
     font-weight: 300;
@@ -277,8 +281,13 @@ h3 {
     box-shadow: 2px 2px 4px #777;
 }
 
+.card {
+    padding-top: 1em;
+}
+
 .card:hover {
     background-color: rgba(226, 205, 159, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
 }
 
 .cards,
@@ -695,6 +704,48 @@ input[type="tel"] {
 
 .table-of-contents {
     margin: 3em 0em;
+}
+
+.scroll-down {
+    display: none;
+}
+
+@media screen and (max-width: 420px) {
+    .scroll-down {
+        display: initial;
+        position: absolute;
+        left: 1em;
+        right: 1em;
+        bottom: 3em;
+        background-color: rgba(220, 220, 220, 0.8);
+        padding: 1.5em 0em;
+        border-radius: 3em;
+        font-size: 1.2em;
+        text-align: center;
+        color: ghostwhite;
+        box-shadow: 0px 0px 5px ghostwhite;
+    }
+}
+
+.scroll-down a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .scroll-down {
+        display: initial;
+        position: absolute;
+        left: 1em;
+        right: 1em;
+        bottom: 3em;
+        background-color: rgba(220, 220, 220, 0.8);
+        padding: 1.5em 0em;
+        border-radius: 3em;
+        font-size: 1.2em;
+        text-align: center;
+        color: ghostwhite;
+        box-shadow: 0px 0px 5px ghostwhite;
+    }
 }
 
 @media screen and (min-width: 768px) {
