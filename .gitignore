@@ -1,0 +1,9 @@
+gitignore
+
+package-lock.json
+
+/assets/files/
+/assets/img/
+/assets/svg/
+
+/node_modules/
