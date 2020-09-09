@@ -1,0 +1,806 @@
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+.header-1,
+.header-2 {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: #b34041;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.organ-history-header {
+    margin: 6em 1em;
+}
+
+.bg-img-organ {
+    background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main-mobile.jpg');
+    background-size: cover;
+    height: 90vh;
+}
+
+@media screen and (min-width: 768px) {
+    .bg-img-organ {
+        background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main-tablet.jpg');
+        height: 94vh;
+        border-bottom: 4px solid #e2cd9f;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bg-img-organ {
+        background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main.jpg');
+        background-size: cover;
+        height: 600px;
+    }
+}
+
+.bg-img-assessment {
+    background-image: url('https://www.lutherorgel-plauen.de/assets/img/orgelakte-banner-mobile.jpg');
+    background-size: cover;
+    border-bottom: 4px solid #e2cd9f;
+    height: 50vh;
+}
+
+@media screen and (min-width: 768px) {
+    .bg-img-assessment {
+        background-image: url('https://www.lutherorgel-plauen.de/assets/img/orgelakte-banner.jpg');
+        margin-bottom: 2em;
+        height: 30em;
+    }
+}
+
+.header-1 {
+    font-size: 2em;
+}
+
+@media screen and (min-width: 768px) {
+    .header-1 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-1 {
+        font-size: 5em;
+    }
+}
+
+.header-2 {
+    font-size: 2.8em;
+}
+
+.gallery-h2,
+.gallery-h3 {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: #b34041;
+}
+
+.gallery-h2 {
+    font-size: 4em;
+    margin-top: 1em;
+}
+
+.gallery-h3 {
+    font-size: 2em;
+}
+
+.circle {
+    width: 2em;
+    height: 2em;
+    border: 0.5em solid #b34041;
+    border-radius: 50%;
+}
+
+.circle span {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    color: #b34041;
+    position: relative;
+    top: -0.45em;
+    left: 2em;
+}
+
+.line {
+    border-left: 0.2em solid #8f4033;
+    margin-left: 0.9em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.line p {
+    margin-left: 1.7em;
+}
+
+@media screen and (min-width: 768px) {
+    .header-2 {
+        font-size: 6em;
+    }
+}
+
+.donation {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    color: #b34041;
+}
+
+@media screen and (min-width: 768px) {
+    .donation {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .donation {
+        font-size: 4.5rem;
+    }
+}
+
+.featurette-heading {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 300;
+    font-size: 32pt;
+}
+
+@media screen and (min-width: 768px) {
+    .featurette-heading {
+        font-size: 34pt;
+    }
+}
+
+.featurette-heading-2 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 300;
+    font-size: 7vh;
+    text-align: center;
+    color: #b34041;
+}
+
+@media screen and (min-width: 768px) {
+    .featurette-heading-2 {
+        font-size: 5.8vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .featurette-heading-2 {
+        font-size: 50pt;
+    }
+}
+
+.featurette-divider {
+    margin: 2em 0;
+}
+
+.veranstaltung a,
+.service a {
+    color: #e2cd9f;
+}
+
+.service,
+.mini-gallery {
+    background-color: #454545;
+    color: white;
+    border-top: 4px solid #e2cd9f;
+    border-bottom: 4px solid #e2cd9f;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.service {
+    background-image: url('https://www.lutherorgel-plauen.de/assets/svg/Lutherkirche-stil.svg');
+}
+
+@media screen and (min-width: 1200px) {
+    .service {
+        background-image: url('https://www.lutherorgel-plauen.de/assets/svg/Lutherkirche-stil-2.svg');
+    }
+}
+
+.veranstaltung,
+.service {
+    height: 860px;
+}
+
+@media screen and (min-width: 768px) {
+    .veranstaltung,
+    .service {
+        height: 740px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .veranstaltung,
+    .service {
+        height: 540px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .veranstaltung,
+    .service {
+        height: 420px;
+    }
+}
+
+.veranstaltung {
+    border-top: 4px solid #e2cd9f;
+    border-bottom: 4px solid #e2cd9f;
+    background-color: grey;
+    color: white;
+}
+
+.veranstaltung img {
+    width: 100%;
+    display: block;
+    margin: 0em auto;
+}
+
+@media screen and (min-width: 768px) {
+    .veranstaltung img {
+        width: 70% !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .veranstaltung img {
+        width: 100% !important;
+    }
+}
+
+
+.mini-gallery {
+    background-image: url('https://www.lutherorgel-plauen.de/assets/svg/Orgel-stil.svg');
+}
+
+.introduction,
+.content-second,
+.content-fourth {
+    background-color: #ffe4b1;
+}
+
+.content-first img,
+.content-second img,
+.content-third img,
+.content-fourth img {
+    box-shadow: 2px 2px 4px #777;
+}
+
+.card {
+    padding-top: 1em;
+    transition: box-shadow 1s ease;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+}
+
+.cards,
+.introduction,
+.content-first,
+.content-second,
+.content-third,
+.content-fourth,
+.donation-details,
+.spenden-info,
+.mini-gallery,
+.service,
+.veranstaltung,
+footer {
+    padding: 2em 0em 2em 0em;
+}
+
+footer {
+    background-color: #b34041;
+    color: #e2cd9f;
+    background-image: url('https://www.lutherorgel-plauen.de/assets/svg/Orgel-stil.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 4px solid #e2cd9f;
+    text-align: center;
+}
+
+footer a {
+    color:#e2cd9f;
+}
+
+footer img {
+    width: 100%;
+}
+
+footer .container-xl .row .col-md-4 {
+    margin: 1em 0em;
+}
+
+.footer-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.fd-rr div:last-child {
+    margin-top: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .fd-rr {
+        flex-direction: row-reverse;
+    }
+}
+
+.gallery-images img {
+    width: 100%;
+    border: 2px solid white;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-images img {
+        width: 220px;
+        border: 4px solid white;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery-images img {
+        width: 340px;
+    }
+}
+
+.images img {
+    width: 100%;
+    border: 2px solid white;
+}
+
+@media screen and (min-width: 768px) {
+    .images img {
+        width: 218px;
+        border: 4px solid white;
+        margin: 5px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .images img {
+        width: 300px;
+    }
+}
+
+.img-friends {
+    width: 100%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .ai-center {
+        align-items: center;
+    }
+}
+
+.ta-center {
+    text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    .fd-column-sm {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .fd-column {
+        flex-direction: column;
+    }
+}
+
+.gallery-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36pt;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.img-2,
+.img-3,
+.img-4 {
+    display: none;
+}
+
+.col-md-4 a {
+    text-decoration: none;
+}
+
+.card img {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+@media screen and (min-width: 768px) {
+    .card img {
+        border-top-left-radius: unset;
+        border-top-right-radius: unset;
+
+        border: 2px solid #e2cd9f;
+        border-radius: 50%;
+    }
+}
+
+iframe {
+    border: 0px;
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    iframe {
+        border: 0px;
+        width: 100%;
+    }
+}
+
+.youtube {
+    display: flex;
+    justify-content: center;
+}
+
+.events-channel-btn,
+.youtube-channel-btn {
+    margin: 1em 0em;
+}
+
+.banner-content {
+    height: 16em;
+    display: flex;
+    align-items: center;
+}
+
+.donation-details {
+    background-image: url('https://www.lutherorgel-plauen.de/assets/img/organ-pipes.jpg');
+    background-repeat: no-repeat;
+    border-top: 4px solid #e2cd9f;
+    border-bottom: 4px solid #e2cd9f;
+}
+
+@media screen and (min-width: 768px) {
+    .donation-details {
+        background-size: cover;
+    }
+}
+
+.donation-details .container-xl {
+    background: white;
+    color: black;
+    opacity: 0.96;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+@media screen and (min-width: 768px) {
+    .donation-details .container-xl {
+        padding: 2em;
+    }
+}
+
+.table-scrollable {
+    width: 100%;
+    overflow-y: auto;
+    margin: 0 0 1em;
+}
+
+.table-scrollable::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+  }
+  
+.table-scrollable::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid #fff;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+table {
+    width: 50em;
+}
+
+table tbody tr td:last-child {
+    padding-left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    table {
+        width: 100%;
+    }
+}
+
+table, th, td {
+    border: 1px solid goldenrod;
+    color: black;
+}
+
+td {
+    height: 2em;
+    background-color: whitesmoke;
+}
+
+.simple,
+.bronze,
+.silver,
+.gold {
+    width: 5em;
+    text-align: center;
+}
+
+.simple,
+.td-simple,
+.last {
+    background-color: whitesmoke;
+}
+
+.bronze {
+    background-color: #cd7f32;
+}
+
+.silver {
+    background-color: #c0c0c0;
+}
+
+.gold {
+    background-color: #ffd700;
+}
+
+.td-simple,
+.td-bronze,
+.td-silver,
+.td-gold {
+    text-align: center;
+}
+
+.td-bronze {
+    background-color: #ffac59;
+}
+
+.td-silver {
+    background-color: #d3d3d3;
+}
+
+.td-gold {
+    background-color: #eee8aa;
+}
+
+.imageGallery1 a {
+    color: #eee;
+}
+
+.imageGallery1 a img {
+    margin-bottom: 0.8em;
+}
+
+.bg-gallery {
+    background-color: #212121;
+}
+
+.jumbotron-gallery,
+.jumbotron-media {
+    background-color: #303030;
+}
+
+.media {
+    margin-bottom: 2em;
+}
+
+.media .iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verfasser {
+    font-style: italic;
+    text-align: right;
+}
+
+.color-dark {
+    color: #222 !important;
+}
+
+.gutachten {
+    width: 100%;
+}
+
+.spendenformular {
+    background-color: white !important;
+}
+
+.spendenkonto {
+    border: 1px solid lightgrey;
+}
+
+.spendenkonto-informationen {
+    border: 1px solid lightgrey;
+    padding-left: 1em;
+}
+
+form {
+    margin: 0px auto;
+}
+
+@media screen and (min-width: 1200px) {
+    form {
+        width: 900px;
+    }
+}
+
+.unterschrift {
+    margin-top: 2em;
+}
+
+.unterschrift.col:last-child {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid lightgrey;
+    background-color: #e9ecef;
+}
+
+.einmalige-spende {
+    width: 4em;
+    text-align: right;
+    background-color: #e9ecef;
+}
+
+.patenschaft_betrag_items {
+    margin-top: 0.5em;
+}
+
+.patenschaft_betrag {
+    background-color: #e9ecef;
+    margin-bottom: 4px;
+    height: 2em;
+    padding-left: 1em;
+    line-height: 2em;
+}
+
+.send-button {
+    margin: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-hinweis {
+    font-size: 1rem;
+}
+
+.patenschaft-label {
+    display: initial !important;
+}
+
+.auswahl_optionen .col-md-4 {
+    margin: 4px 0px;
+}
+
+.table-of-contents {
+    margin: 3em 0em;
+}
+
+.scroll-down {
+    display: none;
+}
+
+@media screen and (max-width: 420px) {
+    .scroll-down {
+        display: initial;
+        position: absolute;
+        left: 1em;
+        right: 1em;
+        bottom: 3em;
+        background-color: rgba(220, 220, 220, 0.8);
+        padding: 1.5em 0em;
+        border-radius: 3em;
+        font-size: 1.2em;
+        text-align: center;
+        color: ghostwhite;
+        box-shadow: 0px 0px 5px ghostwhite;
+    }
+}
+
+.scroll-down a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .scroll-down {
+        display: initial;
+        position: absolute;
+        left: 1em;
+        right: 1em;
+        bottom: 3em;
+        background-color: rgba(220, 220, 220, 0.8);
+        padding: 1.5em 0em;
+        border-radius: 3em;
+        font-size: 1.2em;
+        text-align: center;
+        color: ghostwhite;
+        box-shadow: 0px 0px 5px ghostwhite;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    table {
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .img-2,
+    .img-3,
+    .img-4 {
+        display: initial;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-2 {
+        font-size: 6em;
+    }
+
+    .introduction,
+    .content-first,
+    .content-second,
+    .content-third,
+    .content-fourth,
+    .donation-details,
+    .spenden-info,
+    .mini-gallery,
+    footer {
+        padding: 3em 1em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-2 {
+        font-size: 6em;
+    }
+
+    .introduction,
+    .content-first,
+    .content-second,
+    .content-third,
+    .content-fourth,
+    .donation-details,
+    .spenden-info,
+    .mini-gallery,
+    footer {
+        padding: 6em 1em;
+    }
+}
