@@ -19,6 +19,7 @@ h3 {
     margin-top: 16px;
     margin-bottom: 16px;
 }
+
 .organ {
     margin-top: 3.5rem;
 }
@@ -275,7 +276,8 @@ h3 {
 
 .introduction,
 .content-second,
-.content-fourth {
+.content-fourth,
+.company-donations {
     background-color: #ffe4b1;
 }
 
@@ -298,21 +300,6 @@ h3 {
 
 .card:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
-}
-
-.cards,
-.introduction,
-.content-first,
-.content-second,
-.content-third,
-.content-fourth,
-.donation-details,
-.spenden-info,
-.mini-gallery,
-.service,
-.veranstaltung,
-footer {
-    padding: 2em 0em 2em 0em;
 }
 
 footer {
@@ -398,18 +385,6 @@ footer .container-xl .row .col-md-4 {
     margin-top: 3.5rem;
 }
 
-
-
-@media screen and (min-width: 768px) {
-    .ai-center {
-        align-items: center;
-    }
-}
-
-.ta-center {
-    text-align: center;
-}
-
 @media screen and (max-width: 576px) {
     .fd-column-sm {
         flex-direction: column;
@@ -421,7 +396,6 @@ footer .container-xl .row .col-md-4 {
         flex-direction: column;
     }
 }
-
 .gallery-title {
     font-family: 'Great Vibes', cursive;
     font-size: 36pt;
@@ -810,15 +784,12 @@ input[type="tel"] {
 }
 
 @media screen and (min-width: 768px) {
-    .header-2 {
-        font-size: 6em;
-    }
-
     .introduction,
     .content-first,
     .content-second,
     .content-third,
     .content-fourth,
+    .company-donations,
     .donation-details,
     .spenden-info,
     .mini-gallery,
@@ -828,19 +799,28 @@ input[type="tel"] {
 }
 
 @media screen and (min-width: 1200px) {
-    .header-2 {
-        font-size: 6em;
-    }
-
     .introduction,
     .content-first,
     .content-second,
     .content-third,
     .content-fourth,
+    .company-donations,
     .donation-details,
     .spenden-info,
     .mini-gallery,
     footer {
         padding: 6em 1em;
     }
+}
+
+.company {
+    padding: 15px;
+    background-color: #f8f6f4;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.company:hover {
+    background-color: #fff;
 }
