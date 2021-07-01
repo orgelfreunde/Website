@@ -13,23 +13,26 @@
 
     <link rel="stylesheet" href="assets/css/layout.css">
 
-    <link rel="stylesheet" href="assets/js/libs/simpleLightbox-2.1.0/dist/simpleLightbox.min.css">
-
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 
 </head>
 <body class="spendenformular">
-    <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-orgelred">
-        <a class="navbar-brand" href="https://www.lutherorgel-plauen.de">
-          <img src="assets/svg/Orgel-logo-bright.svg" width="30" height="30" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+        <div class="d-flex flex-grow-1">
+            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+            <a class="navbar-brand" href="https://www.lutherorgel-plauen.de">
+                <img src="assets/svg/Orgel-logo-ghostwhite.svg" width="28" alt="Logo der Orgelfreunde Plauen.">
+            </a>
+            <div class="w-100 text-right">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+            <ul class="navbar-nav ml-auto flex-nowrap">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Spenden/Pfeifenpatenschaften
@@ -58,7 +61,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
                         <a class="dropdown-item" href="http://www.lutherkirche-plauen.de" target="_blank">Lutherkirche Plauen</a>
-                                <a class="dropdown-item" href="https://www.vogtlaendischer-orgelbau.de/startseite.html" target="_blank">Vogtländischer Orgelbau</a>
+                        <a class="dropdown-item" href="https://www.vogtlaendischer-orgelbau.de/startseite.html" target="_blank">Vogtländischer Orgelbau</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -71,68 +74,54 @@
         </div>
     </nav>
 
-    <div class="jumbotron">
-        <div class="container-xl">
-            <h1>Formular zur Orgelpfeifen-Patenschaft in der Lutherkirche zu Plauen</h1>
-        </div>
+    <div class="container-xl" style="margin-top: 6em;">
+        <h1>Formular zur Orgelpfeifen-Patenschaft in der Lutherkirche zu Plauen</h1>
     </div>
 
-    <div class="formular">
+    <div class="formular mt-4">
         <div class="container-xl lead">
-            <form action="#" method="post">
+            <form action="/spendenformular/send" method="post">
                 <div class="form-group">
                     <h5>Sie möchten den Neubau der Orgel in der Lutherkirche zu Plauen mit einer Spende unterstützen?</h5>
-                    <input type="checkbox" name="einmalige_spende">
+                    <!-- <input type="checkbox" name="einmalige_spende"> -->
                     <span id="einmalige_spende">Ja, ich/wir möchte(n) den Neubau der Orgel in der Lutherkirche zu Plauen mit 
-                    einer einmaligen Spende unterstützen. Den Betrag von 
-                    <input type="text" name="einmalige_spende_betrag" placeholder="0" class="einmalige-spende"> € werde(n) ich/wir auf das Konto der Ev.-Luth.
+                    einer Spende unterstützen. Den Betrag von 
+                    <input type="number" 
+                        step="0.01" 
+                        name="einmalige_spende_betrag" 
+                        placeholder="0" 
+                        class="einmalige-spende" 
+                        min="1" 
+                        max="500000"> € werde(n) ich/wir auf das Konto der Ev.-Luth.
                     Lutherkirche Plauen, Zahlungsgrund: Orgel überweisen.</span>
                 </div>
 
+                
                 <h5>Sie möchten eine Orgelpfeifen-Patenschaft übernehmen?</h5>
                 <div class="form-group">
-                    <div class="patenschaft">
-                        <input type="checkbox" name="patenschaft" id="patenschaft" >
-                        <label for="patenschaft" class="patenschaft-label">Ja, ich/wir möchte(n) eine Orgelpfeifen-Patenschaft zum Betrag von </label>
-                    </div>
-                    
-                    <div class="patenschaft_betrag_items">
-                        <div class="patenschaft_betrag">
-                            <input type="radio" name="patenschaft_betrag" value="25"> 25 €
-                        </div>
-                        <div class="patenschaft_betrag">
-                            <input type="radio" name="patenschaft_betrag" value="50"> 50 €
-                        </div>
-                        <div class="patenschaft_betrag">
-                            <input type="radio" name="patenschaft_betrag" value="100"> 100 €
-                        </div>
-                        <div class="patenschaft_betrag">
-                            <input type="radio" name="patenschaft_betrag" value="250"> 250 €
-                        </div>
-                        <div class="patenschaft_betrag">
-                            <input type="radio" name="patenschaft_betrag" value="500"> 500 €
-                        </div>
-                        <div class="patenschaft_betrag">
-                            <input type="radio" name="patenschaft_betrag" value="1000"> 1000 €
-                        </div>
-                    </div>
-                    übernehmen.
-                </div>
-                
-                <h5>Was ist ihre Wunschorgelpfeife?</h5>
-                <div class="form-group">
-                    <input type="checkbox" name="auswahl_wunschorgelpfeife" id="auswahl_wunschorgelpfeife">
-                    <label for="auswahl_wunschorgelpfeife" class="patenschaft-label">Dies ist meine/unsere Wunschorgelpfeife:</label>
+                    <input type="checkbox" name="wunschorgelpfeife" id="wunschorgelpfeife">
+                    <label for="wunschorgelpfeife" class="patenschaft-label">Dann wählen Sie bitte hier Ihre Wunschorgelpfeife(n)!</label>
                     <div class="auswahl_optionen">
                         <div class="form-row">
                             <div class="col-md-4">
-                                <input type="text" name="auswahl_wunschorgelpfeife_ton" class="form-control" placeholder="Ton">
+                                <select class="custom-select" name="wunschorgelpfeife_werk" id="werk" disabled>
+                                    <option value="" disabled selected hidden>Werk</option>
+                                    <option value="Hauptwerk">Hauptwerk</option>
+                                    <option value="Schwellwerk">Schwellwerk</option>
+                                    <option value="Pedalwerk">Pedalwerk</option>
+                                </select>
                             </div>
                             <div class="col-md-4">
-                                <input type="text" name="auswahl_wunschorgelpfeife_register" class="form-control" placeholder="Register">
+                                <select name="wunschorgelpfeife_register" id="register" class="custom-select" disabled>
+                                    <option value="" disabled selected hidden>Register</option>
+
+                                </select>
                             </div>
                             <div class="col-md-4">
-                                <input type="text" name="auswahl_wunschorgelpfeife_werk" class="form-control" placeholder="Werk">
+                                <select name="wunschorgelpfeife_ton" id="ton" class="custom-select" disabled>
+                                    <option value="" disabled selected hidden>Ton</option>
+                                    
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -163,13 +152,6 @@
                 <hr>
 
                 <div class="form-group">
-                    <input type="checkbox" name="allgemeine_spende" id="allgemeine_spende">
-                    <label for="allgemeine_spende" class="patenschaft-label">Ich/wir überweisen den Betrag auf das Konto der Ev.-Luth. Lutherkirche Plauen, Zahlungsgrund: Orgel</label>
-                </div>
-
-                <hr>
-
-                <div class="form-group">
                     <input type="checkbox" name="spendenbescheinigung" id="spendenbescheinigung">
                     <label for="spendenbescheinigung" class="patenschaft-label">Ich/wir bitten um eine Spendenbescheinigung.</label>
                 </div>
@@ -179,8 +161,8 @@
                 <div class="form-group">
                     Mit einer Veröffentlichung meines/unseres Namens auf einer Spendentafel bin ich/sind wir
                     <div>
-                        <input type="radio" name="zustimmung"> einverstanden
-                        <input type="radio" name="zustimmung" checked> nicht einverstanden
+                        <input type="radio" name="zustimmung" value="1" checked> einverstanden
+                        <input type="radio" name="zustimmung" value="0"> nicht einverstanden
                     </div>
                 </div>
 
@@ -190,10 +172,10 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="firstName">Name/Firma:*</label>
-                        <input type="text" name="firstName" id="firstName" class="form-control" required></div>
+                        <input type="text" name="firstname" id="firstName" class="form-control" required></div>
                     <div class="form-group col-md-6"> 
                         <label for="lastName">Vorname(n):</label>
-                        <input type="text" name="firstName" id="lastName" class="form-control"></div>
+                        <input type="text" name="givenname" id="lastName" class="form-control"></div>
                 </div>
 
                 <div class="form-row">
@@ -222,9 +204,9 @@
                 <div class="unterschrift">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <div>
-                                <input type="text" name="abc" class="form-control"> <span>Ort/Datum</span>
-                            </div>
+                            <!-- <div>
+                                <input type="text" name="current_time" class="form-control"> <span>Ort/Datum</span>
+                            </div> -->
                         </div>
                         <div class="form-group col-md-6">
                             <div class="spendenkonto-informationen">
@@ -256,6 +238,7 @@
             </form>
         </div>
     </div>
+    
     <footer>
         <div class="container-xl">
             <div class="row">
