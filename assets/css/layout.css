@@ -29,13 +29,29 @@ h3 {
 }
 
 .bg-img-organ {
-    background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main-mobile.jpg');
+    /* background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main-mobile.jpg'); */
+    background-image: url('./../img/banner-main-mobile.jpg');
     background-size: cover;
     height: 90vh;
     margin-top: 3.5em;
 }
 
+.bg-banner-logo {
+    background-color: white;
+    border: 4px solid #e2cd9f;
+    display: none;
+    padding: 1em;
+    position: relative;
+    top: -2.5em;
+    left: 1em;
+}
+
 @media screen and (min-width: 768px) {
+    .bg-banner-logo {
+        display: initial;
+        width: 12em;
+    }
+
     .bg-img-organ {
         background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main-tablet.jpg');
         height: 94vh;
@@ -44,8 +60,14 @@ h3 {
 }
 
 @media screen and (min-width: 1200px) {
+    .bg-banner-logo {
+        display: initial;
+        width: 14em;
+    }
+
     .bg-img-organ {
-        background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main.jpg');
+        /* background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main.jpg'); */
+        background-image: url('./../img/banner-main.jpg');
         background-size: cover;
         height: 600px;
     }
