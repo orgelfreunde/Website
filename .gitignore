@@ -1,6 +1,4 @@
-gitignore
-
-package-lock.json
+.gitignore
 
 /assets/files/
 /assets/img/
