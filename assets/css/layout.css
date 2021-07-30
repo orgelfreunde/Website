@@ -221,7 +221,7 @@ h3 {
 }
 
 .service,
-.mini-gallery {
+.news-corner {
     background-color: #454545;
     color: white;
     border-top: 4px solid #e2cd9f;
@@ -292,7 +292,7 @@ h3 {
 }
 
 
-.mini-gallery {
+.news-corner {
     background-image: url('https://www.lutherorgel-plauen.de/assets/svg/Orgel-stil.svg');
 }
 
@@ -390,7 +390,7 @@ footer .container-xl .row .col-md-4 {
 
 @media screen and (min-width: 768px) {
     .images img {
-        width: 31.5%;
+        width: 31%;
         border: 4px solid white;
         margin: 5px;
     }
@@ -814,7 +814,7 @@ input[type="tel"] {
     .company-donations,
     .donation-details,
     .spenden-info,
-    .mini-gallery,
+    .news-corner,
     footer {
         padding: 3em 1em;
     }
@@ -829,7 +829,7 @@ input[type="tel"] {
     .company-donations,
     .donation-details,
     .spenden-info,
-    .mini-gallery,
+    .news-corner,
     footer {
         padding: 6em 1em;
     }
@@ -845,4 +845,10 @@ input[type="tel"] {
 
 .company:hover {
     background-color: #fff;
+}
+
+@media screen and (max-width: 420px) {
+    .hide-on-mobile {
+        display: none;
+    }
 }
