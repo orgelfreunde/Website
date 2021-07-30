@@ -390,7 +390,7 @@ footer .container-xl .row .col-md-4 {
 
 @media screen and (min-width: 768px) {
     .images img {
-        width: 218px;
+        width: 31.5%;
         border: 4px solid white;
         margin: 5px;
     }
@@ -398,7 +398,7 @@ footer .container-xl .row .col-md-4 {
 
 @media screen and (min-width: 1200px) {
     .images img {
-        width: 300px;
+        width: 32%
     }
 }
 
