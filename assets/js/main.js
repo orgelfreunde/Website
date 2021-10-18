@@ -1,4 +1,4 @@
-$('.imageGallery1 a').simpleLightbox();
+$('.imageGallery a').simpleLightbox();
 
 const btn = $('#back__to__top');
 
