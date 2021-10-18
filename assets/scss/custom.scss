@@ -8,49 +8,6 @@ h3, .h3 {
     font-weight: 400 !important;
 }
 
-.navbar-logo {
-    position: absolute;
-    width: 226px;
-    // background: rgb(179,64,65);
-    background-color: ghostwhite;
-    padding: 16px;
-    border: 2px solid #b34041;
-    top: 23px;
-    transition: 0.3s;
-}
-
-.navbar-logo:hover {
-    transform: scale(1.04);
-    box-shadow: 0px 0px 4px 4px #e2cd9f;
-}
-
-.jumbotron {
-    background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main-mobile.jpg');
-    background-size: cover;
-    height: 90vh;
-    padding: 0em !important
-}
-
-@media screen and (min-width: 768px) {
-    .jumbotron {
-        background-image: url('https://www.lutherorgel-plauen.de/assets/img/banner-main-tablet.jpg');
-        height: 94vh;
-        border-bottom: 4px solid #e2cd9f;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .jumbotron {
-        background-image: url('/assets/img/banner-main-2021.jpg');
-        background-size: cover;
-        height: 94vh;
-    }
-}
-
-.jumbotron-divider {
-    background-color: ghostwhite;
-}
-
 a.btn-jumbotron {
     color: ghostwhite;
     border: 2px solid ghostwhite;
@@ -97,40 +54,37 @@ a.btn-jumbotron:hover {
     background-color: rgb(80, 80, 80);
 }
 
-footer {
-    background-color: #b34041;
-    color: #e2cd9f;
-    background-image: url('https://www.lutherorgel-plauen.de/assets/svg/Orgel-stil.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-top: 4px solid #e2cd9f;
-    text-align: center;
-}
-
-footer a {
-    color:#e2cd9f;
-}
-
-footer img {
-    width: 100%;
-}
-
-footer .container-xl .row .col-md-4 {
-    margin: 1em 0em;
-}
-
-.footer-brand {
-    display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-}
-
 .news-corner {
     background-image: url("https://www.lutherorgel-plauen.de/assets/svg/organ-stil.svg");
 }
+
+.imageGallery img {
+    transform:none;
+    transition: 0.3s ease-in-out;
+}
+.imageGallery img:hover {
+    transform: scale(1.04);
+    //width: 350px;
+    box-shadow: 0px 0px 4px 4px#e2cd9f;
+}
+
+.featurette-heading {
+    font-family: "Great Vibes", cursive;
+    font-weight: 300;
+    font-size: 7vh;
+    text-align: center;
+    color: #b34041;
+}
+
+.mainpage-gallery {
+    background-image: url(https://www.lutherorgel-plauen.de/assets/svg/Orgel-stil.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@import "jumbotron";
+@import "navbar";
+@import "footer";
 
 // overides-end
 
@@ -156,12 +110,12 @@ footer .container-xl .row .col-md-4 {
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/navbar";
 @import "../../node_modules/bootstrap/scss/card";
-@import "../../node_modules/bootstrap/scss/breadcrumb";
-@import "../../node_modules/bootstrap/scss/pagination";
-@import "../../node_modules/bootstrap/scss/badge";
+// @import "../../node_modules/bootstrap/scss/breadcrumb";
+// @import "../../node_modules/bootstrap/scss/pagination";
+// @import "../../node_modules/bootstrap/scss/badge";
 @import "../../node_modules/bootstrap/scss/jumbotron";
-@import "../../node_modules/bootstrap/scss/alert";
-@import "../../node_modules/bootstrap/scss/progress";
+// @import "../../node_modules/bootstrap/scss/alert";
+// @import "../../node_modules/bootstrap/scss/progress";
 @import "../../node_modules/bootstrap/scss/media";
 @import "../../node_modules/bootstrap/scss/list-group";
 @import "../../node_modules/bootstrap/scss/close";
@@ -169,6 +123,12 @@ footer .container-xl .row .col-md-4 {
 @import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/tooltip";
 @import "../../node_modules/bootstrap/scss/popover";
-@import "../../node_modules/bootstrap/scss/carousel";
+// @import "../../node_modules/bootstrap/scss/carousel";
 @import "../../node_modules/bootstrap/scss/spinners";
 @import "../../node_modules/bootstrap/scss/print";
+
+
+// google-fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
