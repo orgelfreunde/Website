@@ -5,6 +5,10 @@
 $primary: rgb(179,64,65);
 $dark: #212121;
 
+h1, .h1 {
+    font-weight: lighter !important;
+}
+
 h3, .h3 {
     font-weight: 400 !important;
 }
@@ -83,6 +87,19 @@ a.btn-jumbotron:hover {
     background-size: cover;
 }
 
+.btn-round {
+    width: 220px;
+    height: 220px;
+    border-radius: 50% !important;
+    font-size: 32px !important;
+}
+
+@media screen and (max-width: 375px) {
+    .pr-sm-0 {
+        padding-right: 0px !important;
+    }
+}
+
 @import "jumbotron";
 @import "navbar";
 @import "footer";
@@ -111,12 +128,12 @@ a.btn-jumbotron:hover {
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/navbar";
 @import "../../node_modules/bootstrap/scss/card";
-// @import "../../node_modules/bootstrap/scss/breadcrumb";
-// @import "../../node_modules/bootstrap/scss/pagination";
-// @import "../../node_modules/bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/pagination";
+@import "../../node_modules/bootstrap/scss/badge";
 @import "../../node_modules/bootstrap/scss/jumbotron";
-// @import "../../node_modules/bootstrap/scss/alert";
-// @import "../../node_modules/bootstrap/scss/progress";
+@import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/progress";
 @import "../../node_modules/bootstrap/scss/media";
 @import "../../node_modules/bootstrap/scss/list-group";
 @import "../../node_modules/bootstrap/scss/close";
@@ -124,12 +141,12 @@ a.btn-jumbotron:hover {
 @import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/tooltip";
 @import "../../node_modules/bootstrap/scss/popover";
-// @import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/carousel";
 @import "../../node_modules/bootstrap/scss/spinners";
 @import "../../node_modules/bootstrap/scss/print";
 
 
-// // google-fonts
+// google-fonts
 
-// @import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Srisakdi&display=swap');
