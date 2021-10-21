@@ -76,7 +76,7 @@
                 Pfeifenübersicht
               </a>
               <a class="dropdown-item" 
-                href="assets/files/Formular-Pfeifenpatenschaft.pdf" 
+                href="spendenformular.html" 
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -145,7 +145,7 @@
     <div class="foil d-flex justify-content-center">
       <div class="jumbotron-content d-flex align-items-center ">
         <div>
-          <h1 class="display-4">Willkommen beim Jahrhunderprojekt Orgel 2022 <br> der Lutherkirche Plauen!!</h1>
+          <h1 class="h1">Willkommen beim Jahrhunderprojekt Orgel 2022 <br> der Lutherkirche Plauen!!</h1>
           <p class="lead">Am 9. Februar 2021 wurde mit dem Abbau der Orgel begonnen.</p>
           <hr class="jumbotron-divider my-4">
           <p>Aktueller Spendenstand vom 30.09.2021 beträgt 456.794,51 €</p>
@@ -176,6 +176,7 @@
                 />
                 <img
                   src="assets/img/orgel-prospekt-card-mobile.jpg"
+                  class="img-fluid"
                   alt="Frontansicht den Lutherorgel."
                 />
               </picture>
@@ -201,6 +202,7 @@
                 />
                 <img
                   src="assets/img/orgelakte-card-mobile.jpg"
+                  class="img-fluid"
                   alt="Bild vom Gutachten von Juli 1925."
                 />
               </picture>
@@ -226,6 +228,7 @@
                 />
                 <img
                   src="assets/img/orgelfreunde-card-mobile.jpg"
+                  class="img-fluid"
                   alt="Frontansicht den Lutherorgel."
                 />
               </picture>
@@ -266,7 +269,7 @@
         <a
           href="https://www.unesco.de/kultur-und-natur/immaterielles-kulturerbe/immaterielles-kulturerbe-weltweit/orgelbau-und-orgelmusik"
           target="_blank"
-          rel="noopener"
+          rel="noreferrer noopener"
         >
           zeigt die Aufnahme in das immaterielle Weltkulturerbe der UNESCO.</a
         >
@@ -568,44 +571,49 @@
       <div class="row">
         <div class="col-md-4">
           <div>
-              <p class="company">
-                Wohlfühl-Zahnarztpraxis Dr. Frank Oefler
-              </p>
+            <p class="company">
+              Wohlfühl-Zahnarztpraxis Dr. Frank Oefler
+            </p>
           </div>
           <div>
-              <p class="company">HTS- Bau GmbH</p>
+            <p class="company">HTS- Bau GmbH</p>
           </div>
           <div>
-              <p class="company">Klima-Service Fronz</p>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div>
-              <p class="company">vbk technology GmbH Auerbach</p>
-          </div>
-          <div>
-              <p class="company">MAN Truck & Bus Service Plauen</p>
-          </div>
-          <div>
-              <p class="company">Praxis Dr. Thomas Rein</p>
+            <p class="company">Klima-Service Fronz</p>
           </div>
         </div>
 
         <div class="col-md-4">
           <div>
-              <p class="company">Stadtwerke Erdgas Plauen GmbH</p>
+            <p class="company">vbk technology GmbH Auerbach</p>
           </div>
           <div>
-              <p class="company">Bestattungen „KARIN“ Werner</p>
+            <p class="company">MAN Truck & Bus Service Plauen</p>
           </div>
           <div>
-              <p class="company">
-                Maler Plauen Einkaufs- und Verwaltungs e.G.
-              </p>
+            <p class="company">Praxis Dr. Thomas Rein</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div>
+            <p class="company">Stadtwerke Erdgas Plauen GmbH</p>
+          </div>
+          <div>
+            <p class="company">Bestattungen „KARIN“ Werner</p>
+          </div>
+          <div>
+            <p class="company">
+              Maler Plauen Einkaufs- und Verwaltungs e.G.
+            </p>
           </div>
         </div>
       </div>
+
+      <div class="text-center">
+        <button type="button" class="btn btn-primary btn-round mt-5" data-toggle="modal" data-target=".bd-example-modal-lg">Spenden</button>
+      </div>
+
     </div>
   </div>
 
@@ -657,7 +665,178 @@
     </div>
   </footer>
 
+  <!-- Large modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Formular zur Orgelpfeifen-Patenschaft in der Lutherkirche zu Plauen</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <div class="container-xl lead">
+            <form action="/spendenformular/send" method="post">
+              <div class="form-group">
+                <h5>Sie möchten den Neubau der Orgel in der Lutherkirche zu Plauen mit einer Spende unterstützen?</h5>
+                <!-- <input type="checkbox" name="einmalige_spende"> -->
+                <span id="einmalige_spende">
+                  Ja, ich/wir möchte(n) den Neubau der Orgel in der Lutherkirche zu Plauen mit 
+                  einer Spende unterstützen. Den Betrag von 
+                  <input type="number" 
+                      step="0.01" 
+                      name="einmalige_spende_betrag" 
+                      placeholder="0" 
+                      class="einmalige-spende" 
+                      min="1" 
+                      max="500000"> € werde(n) ich/wir auf das Konto der Ev.-Luth.
+                  Lutherkirche Plauen, Zahlungsgrund: Orgel überweisen.
+                </span>
+              </div>
+
+              <h5>Sie möchten eine Orgelpfeifen-Patenschaft übernehmen?</h5>
+              <div class="form-group">
+                <input type="checkbox" name="wunschorgelpfeife" id="wunschorgelpfeife">
+                <label for="wunschorgelpfeife" class="patenschaft-label">Dann wählen Sie bitte hier Ihre Wunschorgelpfeife(n)!</label>
+                <div class="auswahl_optionen">
+                  <div class="form-row">
+                    <div class="col-md-4">
+                      <select class="custom-select" name="wunschorgelpfeife_werk" id="werk" disabled>
+                        <option value="" disabled selected hidden>Werk</option>
+                        <option value="Hauptwerk">Hauptwerk</option>
+                        <option value="Schwellwerk">Schwellwerk</option>
+                        <option value="Pedalwerk">Pedalwerk</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <select name="wunschorgelpfeife_register" id="register" class="custom-select" disabled>
+                        <option value="" disabled selected hidden>Register</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4">
+                      <select name="wunschorgelpfeife_ton" id="ton" class="custom-select" disabled>
+                        <option value="" disabled selected hidden>Ton</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input type="checkbox" name="keine_wunschorgelpfeife" id="keine_wunschorgelpfeife">
+                <label for="keine_wunschorgelpfeife">Ich/wir haben keine Wunschorgelpfeife. Bitte weisen Sie mir/uns eine Pfeife zu, 
+                die dem angekreuzten Betrag entspricht.</label>
+              </div>
+  
+              <div class="form-group">
+                <input type="checkbox" name="alternative_orgelpfeife" id="alternative_orgelpfeife">
+                <label for="alternative_orgelpfeife" class="patenschaft-label">Sollte die ausgewählte Pfeife vergeben sein, bin ich/sind wir damit einverstanden, 
+                dass mir/uns eine andere Pfeife in gleicher Preiskategorie zugeordnet wird.</label>
+              </div>
+  
+              <h5>Patenschaft als Geschenk?</h5>
+
+              <div class="form-group">
+                <input type="checkbox" name="geschenk">
+                <span id="geschenk">Die Patenschaft dieser Orgelpfeife ist ein Geschenk für 
+                <input type="text" name="name_geschenk" class="form-control"> Bitte tragen Sie diesen Namen in die Patenschafts-Urkunde ein.</span>
+              </div>
+  
+              <hr>
+
+              <div class="form-group">
+                <input type="checkbox" name="spendenbescheinigung" id="spendenbescheinigung">
+                <label for="spendenbescheinigung">Ich/wir bitten um eine Spendenbescheinigung.</label>
+              </div>
+
+              <h5>Soll ihr Name auf der Spendentafel erscheinen?</h5>
+
+              <div class="form-group">
+                Mit einer Veröffentlichung meines/unseres Namens auf einer Spendentafel bin ich/sind wir
+                <div>
+                  <input type="radio" name="zustimmung" value="1" checked> einverstanden
+                  <input type="radio" name="zustimmung" value="0"> nicht einverstanden
+                </div>
+              </div>
+  
+              <hr>
+              
+              <h5>Ihre Kontaktdaten:</h5>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="firstName">Name/Firma:*</label>
+                  <input type="text" name="firstname" id="firstName" class="form-control" required>
+                </div>
+                <div class="form-group col-md-6"> 
+                  <label for="lastName">Vorname(n):</label>
+                  <input type="text" name="givenname" id="lastName" class="form-control">
+                </div>
+              </div>
+  
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="street">Straße:*</label>
+                  <input type="text" name="street" id="street" class="form-control" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="zip">PLZ/Ort:*</label>
+                  <input type="text" name="zip" id="zip" class="form-control" required>
+                </div>
+              </div>
+  
+              <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="email">Email:*</label>
+                    <input type="email" name="email" id="email" class="form-control" required>
+                    <p class="email-hinweis">Ihre Email-Adresse wird für die Rückmeldung benötigt.</p>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" name="phone" id="phone" class="form-control">
+                  </div>
+              </div>
+  
+              <div></div>
+  
+              <div class="unterschrift">
+                <div class="form-row">
+                  <div class="col-md-6">
+                    * Pflichtfelder
+                  </div>
+                  <div class="col-md-6">
+                    <strong>Unser Spendenkonto</strong>
+                    <div>
+                      Ev.-Luth. Lutherkirche Plauen
+                    </div>
+                    <div>
+                      Sparkasse Vogtland
+                    </div>
+                    <div>
+                      IBAN: DE10 8705 8000 3000 0051 60
+                    </div>
+                    <div>
+                      BIC/SWIFT: WELA DED1 PLX
+                    </div>
+                    <div>
+                      Zahlungsgrund: Orgel
+                    </div>
+                  </div>
+                </div>
+              </div>
+                  
+              <div class="d-flex justify-content-center mt-5">
+                <button type="submit" class="btn btn-primary text-center">Spenden</button>
+              </div>
+  
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+
   <script src="dist/bundle.js"></script>
-  <!-- <script src="assets/js/main.js"></script> -->
+
 </body>
 </html>
