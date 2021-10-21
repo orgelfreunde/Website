@@ -1,369 +1,477 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="theme-color" content="#b34041">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#b34041" />
+    <meta
+      name="keywords"
+      content="Plauen, Orgel, Lutherkirche in Plauen, Orgelfreunde Plauen, Orgelfreunde Lutherkirche Plauen"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orgelfreunde Plauen in Vogtland</title>
 
-    <!-- Bootstrap - CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Plauen, Deutschland",
+          "postalCode": "D-08523",
+          "streetAddress": "Dobenaustraße 12 (Lutherhaus)"
+        },
+        "email": "kg.plauen_luther (at) evlks.de",
+        "telephone": "(03741) 22 62 32",
+        "faxNumber": "(03741) 14 79 20",
+        "name": "Orgelfreunde Lutherkirche Plauen"
+      }
+    </script>
+  </head>
+  <body class="lead">
+    <!-- Back to top button -->
+    <a href="#banner-content" id="back__to__top" class="back-to-top"></a>
 
-    <link rel="stylesheet" href="assets/css/layout.css">
-
-    <link rel="stylesheet" href="assets/js/libs/simpleLightbox-2.1.0/dist/simpleLightbox.min.css">
-
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-
-</head>
-<body>
-    <nav class="navbar fixed-top navbar-expand-xl navbar-light bg-orgelred">
+    <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
+      <div class="d-flex flex-grow-1">
+        <span class="w-100 d-lg-none d-block"
+          ><!-- hidden spacer to center brand on mobile --></span
+        >
         <a class="navbar-brand" href="https://www.lutherorgel-plauen.de">
-          <img src="assets/svg/Orgel-logo-bright.svg" width="30" height="30" alt="">
+          <img
+            class="navbar-logo"
+            src="assets/svg/organ-logo-black.svg"
+            width="28"
+            alt="Logo der Orgelfreunde Plauen."
+          />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="w-100 text-right">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Spenden/Pfeifenpatenschaften
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="assets/files/Spendenstand.pdf" target="_blank">Spendenstand</a>
-                        <a class="dropdown-item" href="assets/files/Pfeifenübersicht.pdf" target="_blank">Pfeifenübersicht</a>
-                        <a class="dropdown-item" href="assets/files/Formular Pfeifenpatenschaft.pdf" target="_blank">Formular</a>
-                    </div>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Veranstaltungen</a>
-                </li> -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Medien
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="gallerie.html">Bilder</a>
-                        <a class="dropdown-item" href="videos.html">Videos</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Links
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="http://www.lutherkirche-plauen.de" target="_blank">Lutherkirche Plauen</a>
-                                <a class="dropdown-item" href="https://www.vogtlaendischer-orgelbau.de/startseite.html" target="_blank">Vogtländischer Orgelbau</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="impressum.html">Impressum</a>
-                </li>
-            </ul>
+          </button>
         </div>
+      </div>
+      <div
+        class="collapse navbar-collapse flex-grow-1 text-right"
+        id="myNavbar"
+      >
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown1"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Spenden/Pfeifenpatenschaften
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <a
+                class="dropdown-item"
+                href="assets/files/Spendenstand.pdf"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Spendenstand
+              </a>
+              <a
+                class="dropdown-item"
+                href="assets/files/Pfeifenübersicht.pdf"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Pfeifenübersicht
+              </a>
+              <a
+                class="dropdown-item"
+                href="spendenformular.html"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Formular
+              </a>
+            </div>
+          </li>
+          <!-- Deaktiviert bis wieder Veranstaltungen stattfinden dürfen
+          <li class="nav-item">
+            <a class="nav-link" href="#">Veranstaltungen</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown2"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Medien
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <a class="dropdown-item" href="gallerie.html">Bilder</a>
+              <a class="dropdown-item" href="videos.html">Videos</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown3"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Links
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+              <a
+                class="dropdown-item"
+                href="http://www.lutherkirche-plauen.de"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Lutherkirche Plauen
+              </a>
+              <a
+                class="dropdown-item"
+                href="https://www.vogtlaendischer-orgelbau.de/startseite.html"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Vogtländischer Orgelbau
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="datenschutzerklaerung.html"
+              >Datenschutzerklärung</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="impressum.html">Impressum</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-    <div class="organ">
-        <div class="jumbotron">
-            <div class="container-xl">
-                <h1 class="featurette-heading-2">Unsere Orgel</h1>
-            </div>
+    <div class="container-xl">
+      <div>
+        <h1 class="featurette-heading-2">Unsere Orgel</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Unsere jetzige Orgel</h2>
+
+          <p>
+            Die jetzige Orgel ist in den Ursprüngen eine Jehmlich-Orgel von
+            1926, die mehrfach umgebaut wurde (siehe Geschichte der Orgeln).
+          </p>
+
+          <p>
+            Sie hat 29 Register auf 3 Manualen, Kegellade, pneumatische
+            Registratur, pneumatische Tontraktur.
+          </p>
         </div>
 
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Unsere jetzige Orgel</h2>
+        <div class="col-md-6">
+          <h2>Disposition:</h2>
 
-                    <p>Die jetzige Orgel ist in den Ursprüngen eine Jehmlich-Orgel von 1926, 
-                        die mehrfach umgebaut wurde (siehe Geschichte der Orgeln).</p>
-        
-                    <p>Sie hat 29 Register auf 3 Manualen, Kegellade, pneumatische Registratur, 
-                        pneumatische Tontraktur.</p>
-                </div>
-
-                <div class="col-md-6">
-                    <h2>Disposition:</h2>
-
-                    <div class="table-scrollable">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>I.Manual C-a´´´</th>
-                                    <th>II. Manual C-a´´´</th>
-                                    <th>III. Manual C-a´´´</th>
-                                    <th>Pedal C-f´´</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1 Prinzipal 8´</td>
-                                    <td>8 Prinzipal 8´</td>
-                                    <td>19 Rohrflöte  8´</td>
-                                    <td>24 Subbaß 16´</td>
-                                </tr>
-                                <tr>
-                                    <td>2 Oktave 4´</td>
-                                    <td>9 Rohrgedackt 8´</td>
-                                    <td>20 Spitzflöte 4´</td>
-                                    <td>25 Prinzipalbaß 16´</td>
-                                </tr>
-                                <tr>
-                                    <td>3 Quinte 2 2/3´</td>
-                                    <td>10 Oktave 4´</td>
-                                    <td>21 Flötenprinzipal 2´</td>
-                                    <td>26 Oktavbaß 8´</td>
-                                </tr>
-                                <tr>
-                                    <td>4 Oktave 2´</td>
-                                    <td>11 Nachthorn 4´</td>
-                                    <td>22 Terz 1 3/5´</td>
-                                    <td>27 Choralbaß 4´</td>
-                                </tr>
-                                <tr>
-                                    <td>5 Mixtur 4f.</td>
-                                    <td>12 Rohrquinte 2 2/3´</td>
-                                    <td>23 Zimbel 3f.</td>
-                                    <td>28 Italienischer Prinzipal 2´</td>
-                                </tr>
-                                <tr>
-                                    <td>6 Trompete 8´</td>
-                                    <td>13 Oktävlein 2´</td>
-                                    <td>Tremulant</td>
-                                    <td>29 Posaune 16´</td>
-                                </tr>
-                                <tr>
-                                    <td>7 Pommer 16´</td>
-                                    <td>14 Sifflet 1´</td>
-                                    <td>Alle Koppeln</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>15 Sesquialter 2f.</td>
-                                    <td>Suboktavkoppeln</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>16 Scharf 4f.</td>
-                                    <td>Schweller II</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>17 Krummhorn 8´</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>18 Quintadena 16´</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>Tremulant</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div> 
+          <div class="table-scrollable">
+            <table>
+              <thead>
+                <tr>
+                  <th>I.Manual C-a´´´</th>
+                  <th>II. Manual C-a´´´</th>
+                  <th>III. Manual C-a´´´</th>
+                  <th>Pedal C-f´´</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1 Prinzipal 8´</td>
+                  <td>8 Prinzipal 8´</td>
+                  <td>19 Rohrflöte 8´</td>
+                  <td>24 Subbaß 16´</td>
+                </tr>
+                <tr>
+                  <td>2 Oktave 4´</td>
+                  <td>9 Rohrgedackt 8´</td>
+                  <td>20 Spitzflöte 4´</td>
+                  <td>25 Prinzipalbaß 16´</td>
+                </tr>
+                <tr>
+                  <td>3 Quinte 2 2/3´</td>
+                  <td>10 Oktave 4´</td>
+                  <td>21 Flötenprinzipal 2´</td>
+                  <td>26 Oktavbaß 8´</td>
+                </tr>
+                <tr>
+                  <td>4 Oktave 2´</td>
+                  <td>11 Nachthorn 4´</td>
+                  <td>22 Terz 1 3/5´</td>
+                  <td>27 Choralbaß 4´</td>
+                </tr>
+                <tr>
+                  <td>5 Mixtur 4f.</td>
+                  <td>12 Rohrquinte 2 2/3´</td>
+                  <td>23 Zimbel 3f.</td>
+                  <td>28 Italienischer Prinzipal 2´</td>
+                </tr>
+                <tr>
+                  <td>6 Trompete 8´</td>
+                  <td>13 Oktävlein 2´</td>
+                  <td>Tremulant</td>
+                  <td>29 Posaune 16´</td>
+                </tr>
+                <tr>
+                  <td>7 Pommer 16´</td>
+                  <td>14 Sifflet 1´</td>
+                  <td>Alle Koppeln</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>15 Sesquialter 2f.</td>
+                  <td>Suboktavkoppeln</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>16 Scharf 4f.</td>
+                  <td>Schweller II</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>17 Krummhorn 8´</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>18 Quintadena 16´</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Tremulant</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-
-        <div class="container-xl">
-            <hr>
-        </div>
-
-        <div class="container-xl">
-            <h2>Die neue Wolf-Orgel</h2>
-            <div class="row">
-                <div class="col-lg-6">
-                    <p>Die klangliche Gestaltung der Orgel erfolgt nach Johann Gottlob Mende. Verwendbare Register der
-                        Firma Jehmlich von 1926 werden nach denkmalpflegerischen Gesichtspunkten restauriert und in das
-                        Konzept eingebunden.</p>
-                    
-                    <p>Allgemeine Beschreibung: 38 (42) klingende Register (I. Manual 15 Register, II. Manual 18 Register, 
-                        Register, 5 eigenständige Pedalregister + 4 Transmissionen aus dem I. Manual)</p>
-
-                    <p>Schleifladen, Mechanische Tontraktur, elektrische Registertraktur</p>
-
-                    <p>HEUSS-SPS Koppel und Setzer</p>
-                </div>
-                <div class="col-lg-6">
-                    <div class="table-scrollable">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>I. MANUAL C – a³ Hauptwerk</th>
-                                    <th>II. MANUAL C – a³ Schwellwerk</th>
-                                    <th>PEDAL C – f¹</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1. Principal 8</td>
-                                    <td>16. Gedackt 16´ </td>
-                                    <td>34. Principalbaß 16´ </td>
-                                </tr>
-                                <tr>
-                                    <td>2. Bordun 16´ </td>
-                                    <td>17. Principal 8´ </td>
-                                    <td>35. Subbaß 16´ </td>
-                                </tr>
-                                <tr>
-                                    <td>3. Gedackt 8´ </td>
-                                    <td>18. Rohrflöte 8´ </td>
-                                    <td>36. Quintbaß 10 2/3´ </td>
-                                </tr>
-                                <tr>
-                                    <td>4. Quintatön 8´ </td>
-                                    <td>19. Traversflöte 8´ </td>
-                                    <td>37. Octavbaß 8´ </td>
-                                </tr>
-                                <tr>
-                                    <td>5. Floete 8´ </td>
-                                    <td>20. Salicional 8´ </td>
-                                    <td>38. Posaune 16´ </td>
-                                </tr>
-                                <tr>
-                                    <td>6. Viola di Gamba 8´ </td>
-                                    <td>21. Vox coelestis 8´ </td>
-                                    <td>Gedacktbaß 8´ aus Bordun 8´</td>
-                                </tr>
-                                <tr>
-                                    <td>7. Octave 4´ </td>
-                                    <td>22. Octave 4´ </td>
-                                    <td>Cellobaß 8´ aus Viola di Gamba 8´</td>
-                                </tr>
-                                <tr>
-                                    <td>8. Gemshorn 4´ </td>
-                                    <td>23. Salicet 4´ </td>
-                                    <td>Octavbaß 4´ aus Octave 4´</td>
-                                </tr>
-                                <tr>
-                                    <td>9. Flöte 4</td>
-                                    <td>24. Gedackt 4´ </td>
-                                    <td>Trompetenbaß 8´ aus Trompete 8´</td>
-                                </tr>
-                                <tr>
-                                    <td>10. Quinte 2 2/3´ </td>
-                                    <td>25. Nasat 2 2/3´ </td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>11. Octave 2</td>
-                                    <td>26. Flötenprincipal 2´</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>12. Cornett 3-4fach 4´</td>
-                                    <td>27. Terz 1 3/5´</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>13. Mixtur 4fach 2´ </td>
-                                    <td>28. Quinte 1 1/3´</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>14. Trompete 8´ </td>
-                                    <td>29. Mixtur 3-4fach 1 1/3´</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>15. Unda Maris 8´</td>
-                                    <td>30. Krummhorn 8´</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>31. Oboe 8´</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>32. Fagott 16´</td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>33. Oboe 4´</td>
-                                    <td></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <h5>KOPPELN</h5>
-            <div>Manualkoppel II/I mechanische und elektrische Ausführung</div>
-            <div>Pedalkoppel I/P</div>
-            <div>Pedalkoppel II/P</div>
-            <div>Suboctavkoppel II/I in der HEUSS-SPS Koppel und Setzer mit eingeplant</div>
-
-            <h5>SPIELHILFEN</h5>
-            <div>Tremulanten für I. und II. Manual frei regelbar</div>
-            <div>Jalousieschweller II. Manual (Neubau der Schwellwand)</div>
-            <div>Crescendowalze</div>
-            <div>Setzeranlage HEUSS-SPS Koppel und Setzer </div>
-        </div>
+      </div>
     </div>
 
-    <footer>
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-md-4">
-                    <a class="footer-brand" href="index.html" title="Startseite">
-                        <img src="assets/svg/Orgel-logo-bright.svg" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <h3>Kontakt:</h3>
-                    <div class="lead">Ev.-Luth.Lutherkirchgemeinde</div>
-                    <div class="lead">Dobenaustraße 12 (Lutherhaus)</div>
-                    <div class="lead">08523 Plauen</div>
-                    <br>
-                    <div>
-                        <a href="tel:03741226232" class="lead">Tel.: 03741 / 22 62 32</a>
-                    </div>
-                    <div>
-                        <a href="fax:03741147920" class="lead">Fax.: 03741 / 14 79 20</a>
-                    </div>
-                    <div>
-                        <a class="lead" href="mailto:kg.plauen_luther@evlks.de">Email schreiben</a><br>
-                        <a href="https://www.lutherkirche-plauen.de" class="lead">lutherkirche-plauen.de</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h3>Bankverbindung:</h3>
-                    <div class="lead">Ev.Luth.Lutherkirche Plauen</div>
-                    <div class="lead">Sparkasse Vogtland</div>
-                    <div class="lead">IBAN: DE10 8705 8000 3000 0051 60</div>
-                    <div class="lead">BIC/SWIFT: WELA DED1 PLX</div>
-                    <div class="lead">Zahlungsgrund: Orgel</div>
-                    <div class="lead">Bitte Name und Adresse angeben.</div>
-                </div>
-            </div>
+    <div class="container-xl">
+      <hr class="featurete-divider">
+    </div>
+
+    <div class="container-xl">
+      <h2>Die neue Wolf-Orgel</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <p>
+            Die klangliche Gestaltung der Orgel erfolgt nach Johann Gottlob
+            Mende. Verwendbare Register der Firma Jehmlich von 1926 werden nach
+            denkmalpflegerischen Gesichtspunkten restauriert und in das Konzept
+            eingebunden.
+          </p>
+
+          <p>
+            Allgemeine Beschreibung: 38 (42) klingende Register (I. Manual 15
+            Register, II. Manual 18 Register, Register, 5 eigenständige
+            Pedalregister + 4 Transmissionen aus dem I. Manual)
+          </p>
+
+          <p>
+            Schleifladen, Mechanische Tontraktur, elektrische Registertraktur
+          </p>
+
+          <p>HEUSS-SPS Koppel und Setzer</p>
         </div>
+        <div class="col-lg-6">
+          <div class="table-scrollable">
+            <table>
+              <thead>
+                <tr>
+                  <th>I. MANUAL C – a³ Hauptwerk</th>
+                  <th>II. MANUAL C – a³ Schwellwerk</th>
+                  <th>PEDAL C – f¹</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1. Principal 8</td>
+                  <td>16. Gedackt 16´</td>
+                  <td>34. Principalbaß 16´</td>
+                </tr>
+                <tr>
+                  <td>2. Bordun 16´</td>
+                  <td>17. Principal 8´</td>
+                  <td>35. Subbaß 16´</td>
+                </tr>
+                <tr>
+                  <td>3. Gedackt 8´</td>
+                  <td>18. Rohrflöte 8´</td>
+                  <td>36. Quintbaß 10 2/3´</td>
+                </tr>
+                <tr>
+                  <td>4. Quintatön 8´</td>
+                  <td>19. Traversflöte 8´</td>
+                  <td>37. Octavbaß 8´</td>
+                </tr>
+                <tr>
+                  <td>5. Floete 8´</td>
+                  <td>20. Salicional 8´</td>
+                  <td>38. Posaune 16´</td>
+                </tr>
+                <tr>
+                  <td>6. Viola di Gamba 8´</td>
+                  <td>21. Vox coelestis 8´</td>
+                  <td>Gedacktbaß 8´ aus Bordun 8´</td>
+                </tr>
+                <tr>
+                  <td>7. Octave 4´</td>
+                  <td>22. Octave 4´</td>
+                  <td>Cellobaß 8´ aus Viola di Gamba 8´</td>
+                </tr>
+                <tr>
+                  <td>8. Gemshorn 4´</td>
+                  <td>23. Salicet 4´</td>
+                  <td>Octavbaß 4´ aus Octave 4´</td>
+                </tr>
+                <tr>
+                  <td>9. Flöte 4</td>
+                  <td>24. Gedackt 4´</td>
+                  <td>Trompetenbaß 8´ aus Trompete 8´</td>
+                </tr>
+                <tr>
+                  <td>10. Quinte 2 2/3´</td>
+                  <td>25. Nasat 2 2/3´</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11. Octave 2</td>
+                  <td>26. Flötenprincipal 2´</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12. Cornett 3-4fach 4´</td>
+                  <td>27. Terz 1 3/5´</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>13. Mixtur 4fach 2´</td>
+                  <td>28. Quinte 1 1/3´</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>14. Trompete 8´</td>
+                  <td>29. Mixtur 3-4fach 1 1/3´</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>15. Unda Maris 8´</td>
+                  <td>30. Krummhorn 8´</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>31. Oboe 8´</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>32. Fagott 16´</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>33. Oboe 4´</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <h5>KOPPELN</h5>
+      <div>Manualkoppel II/I mechanische und elektrische Ausführung</div>
+      <div>Pedalkoppel I/P</div>
+      <div>Pedalkoppel II/P</div>
+      <div>
+        Suboctavkoppel II/I in der HEUSS-SPS Koppel und Setzer mit eingeplant
+      </div>
+
+      <h5>SPIELHILFEN</h5>
+      <div>Tremulanten für I. und II. Manual frei regelbar</div>
+      <div>Jalousieschweller II. Manual (Neubau der Schwellwand)</div>
+      <div>Crescendowalze</div>
+      <div>Setzeranlage HEUSS-SPS Koppel und Setzer</div>
+    </div>
+
+    <footer class="bg-primary">
+      <div class="container-xl pt-5 pb-5">
+        <div class="row">
+          <div class="col-md-4">
+            <a
+              class="footer-brand"
+              href="https://www.lutherorgel-plauen.de"
+              title="Startseite"
+            >
+              <img src="assets/svg/organ-logo-bright.svg" alt="" />
+            </a>
+          </div>
+          <div class="col-md-4">
+            <h3>Kontakt:</h3>
+            <div class="lead">Ev.-Luth.Lutherkirchgemeinde</div>
+            <div class="lead">Dobenaustraße 12 (Lutherhaus)</div>
+            <div class="lead">08523 Plauen</div>
+            <br />
+            <div>
+              <a href="tel:03741226232" class="lead">Tel.: 03741 / 22 62 32</a>
+            </div>
+            <div>
+              <a href="fax:03741147920" class="lead">Fax.: 03741 / 14 79 20</a>
+            </div>
+            <div>
+              <a class="lead" href="mailto:kg.plauen_luther@evlks.de"
+                >Email schreiben</a
+              ><br />
+              <a href="https://www.lutherkirche-plauen.de" class="lead"
+                >lutherkirche-plauen.de</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h3>Bankverbindung:</h3>
+            <div class="lead">Ev.Luth.Lutherkirche Plauen</div>
+            <div class="lead">Sparkasse Vogtland</div>
+            <div class="lead">IBAN: DE10 8705 8000 3000 0051 60</div>
+            <div class="lead">BIC/SWIFT: WELA DED1 PLX</div>
+            <div class="lead">Zahlungsgrund: Orgel</div>
+            <div class="lead">Bitte Name und Adresse angeben.</div>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <script src="assets/js/libs/jquery/jquery.slim.min.js"></script>
-    <script src="assets/js/libs/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/libs/simpleLightbox-2.1.0/dist/simpleLightbox.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+    <script src="dist/bundle.js"></script>
+  </body>
 </html>
