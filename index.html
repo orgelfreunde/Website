@@ -146,10 +146,10 @@
       <div class="jumbotron-content d-flex align-items-center ">
         <div>
           <h1 class="h1">Willkommen beim Jahrhunderprojekt Orgel 2022 <br> der Lutherkirche Plauen!!</h1>
-          <p class="lead">Am 9. Februar 2021 wurde mit dem Abbau der Orgel begonnen.</p>
+          <p">Am 9. Februar 2021 wurde mit dem Abbau der Orgel begonnen.</p>
           <hr class="jumbotron-divider my-4">
-          <p>Aktueller Spendenstand vom 30.09.2021 beträgt 456.794,51 €</p>
-          <a class="btn btn-jumbotron btn-lg" href="unsere-orgel.html" role="button">Weiterlesen</a>
+          <h5>Aktueller Spendenstand vom 30.11.2021 beträgt 462.028,14 €</h5>
+          <a class="btn btn-jumbotron btn-lg mt-4" href="unsere-orgel.html" role="button">Weiter</a>
         </div>
       </div>
     </div>
@@ -288,28 +288,35 @@
       <div class="row flex-lg-row-reverse align-items-center">
         <div class="col-md-5">
           <img
-            src="assets/img/vertrag-unterschrift.jpg"
+            src="assets/img/Orgelprospekt.jpg"
             class="img-fluid shadow-lg p-3 mb-5 bg-white rounded"
             alt="Orgelprospekt"
           />
         </div>
         <div class="col-md-7 pr-lg-5 pr-sm-1">
-          <h2 class="text-muted mb-4">Die neue Orgel wird dreimanualig</h2>
+          <h2 class="text-muted mb-4">Vom Orgelprospekt ...</h2>
           <p>
-            Am 1. Oktober 2020 wurde OBM Thomas Wolf vom Kirchenvorstand 
-            der Lutherkirche beauftragt, die Neue Orgel in der Lutherkirche 
-            zu bauen. Es sollte, nach jahrelangen Vorarbeiten und Bedenken 
-            eine zweimanualige Orgel mit 38 Registern werden. 
+            Den <strong>Orgelprospekt</strong> das "Gesicht" der Orgel, hat
+            1834 der Leipziger Orgelbauer Johann Gottlob Mende geschaffen. Von
+            dem Werk, das dahinter stand, ist fast nichts mehr vorhanden.
           </p>
-          <div>
-            <a
-              class="btn btn-secondary mt-3"
-              href="neue-orgel-drei-manualig.html"
-              role="button"
-            >
-              mehr lesen »
-            </a>
-          </div>
+          <p>
+            Das romantische Pfeifenwerk wurde im großem Stil umgearbeitet.
+            Orgelpfeifen wurden abgeschnitten. Durch tiefgreifende
+            Veränderungen klingt die Orgel nun stilfremd, "Neo-Barock".
+          </p>
+          <p>
+            Während des Mangels in DDR-Zeiten konnte die Orgel nur durch
+            großen persönlichen Einsatz des ehemaligen Lutherkantors Lothar
+            Fleischer und eines freien Orgelbauers gewartet und spielbar
+            gehalten werden.
+          </p>
+          <p>
+            Der technische Kern ist aber weiter hochromantisch. Dadurch
+            klingen die Pfeifen teilweise erheblich später, als die Tasten
+            gedrückt werden. Für Kirchenmusiker ist das eine große
+            Herausforderung!
+          </p>
         </div>
       </div>
     </div>
@@ -414,7 +421,9 @@
           <div>
             <a
               class="btn btn-secondary"
-              href="https://de.wikipedia.org/wiki/Lutherkirche_(Plauen)"
+              href="https://www.lutherkirche-plauen.de/"
+              target="blanc"
+              rel="noreferrer noopener"
               role="button"
             >
               weitere Informationen »
@@ -605,7 +614,7 @@
 
   <div class="container-xl">
     <p class="featurette-heading mb-5">
-      Aktueller Spendenstand vom 30.09.2021 beträgt 456.794,51 €
+      Aktueller Spendenstand vom 30.11.2021 beträgt 462.018,14 €
     </p>
   </div>
 
@@ -652,7 +661,7 @@
   </footer>
 
   <!-- Large modal -->
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
@@ -663,7 +672,7 @@
         </div>
         <div class="modal-body">
 
-          <div class="container-xl lead">
+          <div class="container-xl">
             <form action="/spendenformular/send" method="post">
               <div class="form-group">
                 <h5>Sie möchten den Neubau der Orgel in der Lutherkirche zu Plauen mit einer Spende unterstützen?</h5>
@@ -684,50 +693,83 @@
 
               <h5>Sie möchten eine Orgelpfeifen-Patenschaft übernehmen?</h5>
               <div class="form-group">
-                <input type="checkbox" name="wunschorgelpfeife" id="wunschorgelpfeife">
-                <label for="wunschorgelpfeife" class="patenschaft-label">Dann wählen Sie bitte hier Ihre Wunschorgelpfeife(n)!</label>
+                <input type="checkbox" name="wishorganpipe" id="wishorganpipe">
+                <label for="wishorganpipe" class="patenschaft-label">Dann wählen Sie bitte hier Ihre Wunschorgelpfeife(n)!</label>
                 <div class="auswahl_optionen">
                   <div class="form-row">
-                    <div class="col-md-4">
-                      <select class="custom-select" name="wunschorgelpfeife_werk" id="werk" disabled>
+                    <div class="col-md-3  mb-2">
+                      <select class="custom-select" name="work" id="work" disabled>
                         <option value="" disabled selected hidden>Werk</option>
-                        <option value="Hauptwerk">Hauptwerk</option>
-                        <option value="Schwellwerk">Schwellwerk</option>
-                        <option value="Pedalwerk">Pedalwerk</option>
                       </select>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3  mb-2">
                       <select name="wunschorgelpfeife_register" id="register" class="custom-select" disabled>
                         <option value="" disabled selected hidden>Register</option>
                       </select>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3 mb-2">
                       <select name="wunschorgelpfeife_ton" id="ton" class="custom-select" disabled>
                         <option value="" disabled selected hidden>Ton</option>
                       </select>
+                    </div>
+                    <div class="col-md-3">
+                      <button 
+                        class="btn btn-success w-100"
+                        id="add-new-pipe"
+                        role="button"
+                        title="Noch eine Pfeife hinzufügen"
+                        disabled
+                      >
+                        +
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="form-group">
+              <div class="form-group text-wrap">
                 <input type="checkbox" name="keine_wunschorgelpfeife" id="keine_wunschorgelpfeife">
-                <label for="keine_wunschorgelpfeife">Ich/wir haben keine Wunschorgelpfeife. Bitte weisen Sie mir/uns eine Pfeife zu, 
+                <label for="keine_wunschorgelpfeife" class="d-inline">Ich/wir haben keine Wunschorgelpfeife. Bitte weisen Sie mir/uns eine Pfeife zu, 
                 die dem angekreuzten Betrag entspricht.</label>
               </div>
   
               <div class="form-group">
                 <input type="checkbox" name="alternative_orgelpfeife" id="alternative_orgelpfeife">
-                <label for="alternative_orgelpfeife" class="patenschaft-label">Sollte die ausgewählte Pfeife vergeben sein, bin ich/sind wir damit einverstanden, 
+                <label for="alternative_orgelpfeife" class="d-inline">Sollte die ausgewählte Pfeife vergeben sein, bin ich/sind wir damit einverstanden, 
                 dass mir/uns eine andere Pfeife in gleicher Preiskategorie zugeordnet wird.</label>
               </div>
   
               <h5>Patenschaft als Geschenk?</h5>
 
               <div class="form-group">
-                <input type="checkbox" name="geschenk">
-                <span id="geschenk">Die Patenschaft dieser Orgelpfeife ist ein Geschenk für 
-                <input type="text" name="name_geschenk" class="form-control"> Bitte tragen Sie diesen Namen in die Patenschafts-Urkunde ein.</span>
+                <input type="checkbox" name="gift" id="pipe__as__gift">
+                <label for="pipe__as__gift">Die Patenschaft dieser Orgelpfeife ist ein Geschenk für</label>
+                <div id="recipient__input">
+                  <div class="row mb-2">
+                    <div class="col-sm-6 col-lg-10">
+                      <input 
+                        type="text" 
+                        name="name-recipients[]" 
+                        id="name__recipient" 
+                        class="form-control mb-2" 
+                        disabled
+                      >
+                    </div>
+                    <div class="col-sm-6 col-lg-2">
+                      <button 
+                        class="btn btn-success w-100"
+                        id="new__recipient__input"
+                        role="button"
+                        title="Einen Namen zusätzlich hinzufügen"
+                        type="button"
+                        disabled
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                Bitte tragen Sie diesen Namen in die Patenschafts-Urkunde ein.
               </div>
   
               <hr>
@@ -739,11 +781,15 @@
 
               <h5>Soll ihr Name auf der Spendentafel erscheinen?</h5>
 
-              <div class="form-group">
+              <div>
                 Mit einer Veröffentlichung meines/unseres Namens auf einer Spendentafel bin ich/sind wir
-                <div>
-                  <input type="radio" name="zustimmung" value="1" checked> einverstanden
-                  <input type="radio" name="zustimmung" value="0"> nicht einverstanden
+                <div class="form-check">
+                  <input type="radio" name="zustimmung" class="form-check-input" id="agree" value="1" checked>
+                  <label class="form-check-label" for="agree">einverstanden</label>
+                </div>
+                <div class="form-check">
+                  <input type="radio" name="zustimmung" class="form-check-input" id="disagree" value="0">
+                  <label class="form-check-label" for="disagree">nicht einverstanden</label>
                 </div>
               </div>
   
