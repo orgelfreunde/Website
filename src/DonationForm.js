@@ -1,11 +1,23 @@
 "use strict";
 
 const DonationForm = (function () {
-  return {
+   return {
     setupEventListeners() {
       document.addEventListener('DOMContentLoaded', () => {
+        this.addNewPipe();
         this.getOrganWorks();
+        this.toggleWishOrganPipe();
       })
+    },
+
+    addNewPipe() {
+      const addNewPipe = document.querySelector('#add-new-pipe');
+
+      if(null !== addNewPipe) {
+        addNewPipe.addEventListener('click', (e) => {
+          e.preventDefault();
+        });
+      }
     },
 
     getOrganWorks() {
@@ -29,6 +41,17 @@ const DonationForm = (function () {
       req.responseType = 'json';
       req.setRequestHeader('Accept', 'application/json');
       req.send();
+    },
+
+    toggleWishOrganPipe() {
+      const wishOrganPipe = document.querySelector('#wishorganpipe');
+      const work = document.getElementById('work');
+    
+      if(null!=wishOrganPipe && null!=work) {
+        wishOrganPipe.addEventListener('click', () => {
+          work.toggleAttribute('disabled');
+        })
+      }
     },
 
     init() {

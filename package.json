@@ -1,10 +1,10 @@
 {
   "name": "orgelfreunde-website",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Webseite der Orgelfreunde Plauen",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,18 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "simplelightbox": "^2.9.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "css-loader": "^6.4.0",
+    "exports-loader": "^3.0.0",
+    "node-sass": "^6.0.1",
+    "postcss-loader": "^6.2.0",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.1"
   }
 }
