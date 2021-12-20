@@ -10,17 +10,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orgelfreunde Plauen in Vogtland</title>
 
-    <!-- Bootstrap - CSS -->
-    <link rel="stylesheet" href="assets/css/custom.css" />
-
-    <link
-      rel="stylesheet"
-      href="assets/js/libs/simpleLightbox-2.1.0/dist/simpleLightbox.min.css"
-    />
-
+    <!-- SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Plauen, Deutschland",
+          "postalCode": "D-08523",
+          "streetAddress": "Dobenaustraße 12 (Lutherhaus)"
+        },
+        "email": "kg.plauen_luther (at) evlks.de",
+        "telephone": "(03741) 22 62 32",
+        "faxNumber": "(03741) 14 79 20",
+        "name": "Orgelfreunde Lutherkirche Plauen"
+      }
+    </script>
   </head>
   <body class="lead">
-    <nav class="navbar navbar-expand-xl navbar-dark bg-primary fixed-top">
+    <!-- Back to top button -->
+    <a href="#banner-content" id="back__to__top" class="back-to-top"></a>
+
+    <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
       <div class="d-flex flex-grow-1">
         <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
         <a class="navbar-brand" href="https://www.lutherorgel-plauen.de">
@@ -64,7 +76,7 @@
                 Pfeifenübersicht
               </a>
               <a class="dropdown-item" 
-                href="assets/files/Formular-Pfeifenpatenschaft.pdf" 
+                href="spendenformular.html" 
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -129,37 +141,87 @@
       </div>
   </nav>
 
-    <div class="container-xl">
-      <div>
-        <h1>Impressum</h1>
-      </div>
+  <div class="container-xl">
+      <article>
+        <h2 class="text-muted mb-4">Die neue Orgel wird dreimanualig</h2>
+        <p>
+          Am 1. Oktober 2020 wurde OBM Thomas Wolf vom Kirchenvorstand 
+          der Lutherkirche beauftragt, die Neue Orgel in der Lutherkirche 
+          zu bauen. Es sollte, nach jahrelangen Vorarbeiten und Bedenken 
+          eine zweimanualige Orgel mit 38 Registern werden. 
+        </p>
+        <p>
+          In der Schublade lag ein Entwurf von OBM Thomas Wolf, der 
+          nicht mehr Register, aber die Verteilung der Register auf 
+          3 Manuale vorsah. Die Besonderheit: für das 3. Manual sollten 
+          die alten Windladen wiederverwendet werden, so dass das 
+          3. Manual pneumatisch angesteuert wird, aber durch eine 
+          Eigenkonstruktion von Wolf keine Verzögerung mehr bestehen würde.
+        </p>
+        <p>
+          So sollten die Register, die Johann Gottlob Mende ursprünglich 
+          in unsere Orgel gebaut hatte, auf Haupt- und Oberwerk verteilt 
+          werden, die etwas romantischeren Register dann auf das Schwellwerk. 
+          Diese Variante sollte nur ca. 25.000 € mehr kosten, war aber 
+          nach dem damaligen Finanzierungsstand nicht zu stemmen.
+        </p>
+        <p>
+          Auch der Beauftragte für Orgeln im Landesdenkmalamt präferierte 
+          dieses Variante, würde doch damit die Mende-Orgel wieder auferstehen 
+          und bekäme noch eine Aufwertung durch weitere Register.
+        </p>
+        <p>
+          Durch eine großzügige Förderung durch die Ostdeutsche 
+          Sparkassenstiftung können wir jetzt doch diese dreimanualige Orgel 
+          bauen, die damit dem Original von Johann Gottlob Mende näher kommt 
+          und noch mehr klangliche Spielvarianten zulässt.
+        </p>
+      </article>
+  </div>
 
+  <footer class="bg-primary">
+    <div class="container-xl pt-5 pb-5">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
+          <a class="footer-brand" href="https://www.lutherorgel-plauen.de" title="Startseite">
+            <img src="assets/svg/organ-logo-bright.svg" alt="" />
+          </a>
+        </div>
+        <div class="col-md-4">
+          <h3>Kontakt:</h3>
+          <div class="lead">Ev.-Luth.Lutherkirchgemeinde</div>
+          <div class="lead">Dobenaustraße 12 (Lutherhaus)</div>
+          <div class="lead">08523 Plauen</div>
+          <br />
           <div>
-            <h2>Inhaber</h2>
-            <div class="lead">Orgelfreunde Lutherkirche Plauen</div>
-            <div class="lead">Ev.-Luth.Lutherkirchgemeinde</div>
-            <div class="lead">Dobenaustrasse 12 (Lutherhaus)</div>
-            <div class="lead">08523 Plauen</div>
+            <a href="tel:03741226232" class="lead">Tel.: 03741 / 22 62 32</a>
+          </div>
+          <div>
+            <a href="fax:03741147920" class="lead">Fax.: 03741 / 14 79 20</a>
+          </div>
+          <div>
+            <a class="lead" href="mailto:kg.plauen_luther@evlks.de"
+              >Email schreiben</a
+            ><br />
+            <a href="https://www.lutherkirche-plauen.de" class="lead"
+              >lutherkirche-plauen.de</a
+            >
           </div>
         </div>
-        <div class="col-md-6">
-          <h2>Kontakt</h2>
-          <div>
-            <a href="tel:03741226232" class="text-secondary">Tel.: 03741 / 22 62 32</a>
-          </div>
-          <div>
-            <a href="fax:03741147920" class="text-secondary">Fax.: 03741 / 14 79 20</a>
-          </div>
-          <div>
-            <a class="text-secondary" href="mailto:kg.plauen_luther@evlks.de">Email schreiben</a><br>
-            <a href="https://www.lutherkirche-plauen.de" class="text-secondary">lutherkirche-plauen.de</a>
-          </div>
+        <div class="col-md-4">
+          <h3>Bankverbindung:</h3>
+          <div class="lead">Ev.Luth.Lutherkirche Plauen</div>
+          <div class="lead">Sparkasse Vogtland</div>
+          <div class="lead">IBAN: DE10 8705 8000 3000 0051 60</div>
+          <div class="lead">BIC/SWIFT: WELA DED1 PLX</div>
+          <div class="lead">Zahlungsgrund: Orgel</div>
+          <div class="lead">Bitte Name und Adresse angeben.</div>
         </div>
       </div>
     </div>
+  </footer>
 
-    <script src="dist/bundle.js"></script>
-  </body>
+  <script src="dist/bundle.js"></script>
+
+</body>
 </html>

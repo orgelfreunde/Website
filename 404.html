@@ -1,159 +1,247 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="theme-color" content="#b34041">
-    <meta name="keywords" content="Plauen, Orgel, Lutherkirche in Plauen, Orgelfreunde Plauen, Orgelfreunde Lutherkirche Plauen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#b34041" />
+    <meta
+      name="keywords"
+      content="Plauen, Orgel, Lutherkirche in Plauen, Orgelfreunde Plauen, Orgelfreunde Lutherkirche Plauen"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Orgelfreunde Plauen in Vogtland</title>
-
-    <!-- Bootstrap - CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-reboot.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-
-    <link rel="stylesheet" href="assets/css/layout.css">
-
-    <link rel="stylesheet" href="assets/js/libs/simpleLightbox-2.1.0/dist/simpleLightbox.min.css">
-
-    <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 
     <!-- SEO -->
     <script type="application/ld+json">
-    {
+      {
         "@context": "http://schema.org",
         "@type": "Organization",
         "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Plauen, Deutschland",
-            "postalCode": "D-08523",
-            "streetAddress": "Dobenaustraße 12 (Lutherhaus)"
+          "@type": "PostalAddress",
+          "addressLocality": "Plauen, Deutschland",
+          "postalCode": "D-08523",
+          "streetAddress": "Dobenaustraße 12 (Lutherhaus)"
         },
         "email": "kg.plauen_luther (at) evlks.de",
         "telephone": "(03741) 22 62 32",
         "faxNumber": "(03741) 14 79 20",
         "name": "Orgelfreunde Lutherkirche Plauen"
-    }
+      }
     </script>
-</head>
-<body>
-    <nav class="navbar navbar-expand-xl navbar-light bg-orgelred">
+  </head>
+  <body class="lead">
+    <!-- Back to top button -->
+    <a href="#banner-content" id="back__to__top" class="back-to-top"></a>
+
+    <nav class="navbar navbar-expand-xl navbar-dark bg-primary">
+      <div class="d-flex flex-grow-1">
+        <span class="w-100 d-lg-none d-block"
+          ><!-- hidden spacer to center brand on mobile --></span
+        >
         <a class="navbar-brand" href="https://www.lutherorgel-plauen.de">
-          <img src="assets/svg/Orgel-logo-bright.svg" width="30" height="30" alt="">
+          <img
+            class="navbar-logo"
+            src="assets/svg/organ-logo-black.svg"
+            width="28"
+            alt="Logo der Orgelfreunde Plauen."
+          />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="w-100 text-right">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Spenden/Pfeifenpatenschaften
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                        <a class="dropdown-item" href="assets/files/Spendenstand.pdf" target="_blank">Spendenstand</a>
-                        <a class="dropdown-item" href="assets/files/Pfeifenübersicht.pdf" target="_blank">Pfeifenübersicht</a>
-                        <a class="dropdown-item" href="assets/files/Formular-Pfeifenpatenschaft.pdf" target="_blank">Formular</a>
-                    </div>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Veranstaltungen</a>
-                </li> -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Medien
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item" href="gallerie.html">Bilder</a>
-                        <a class="dropdown-item" href="videos.html">Videos</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Links
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                        <a class="dropdown-item" href="http://www.lutherkirche-plauen.de" target="_blank">Lutherkirche Plauen</a>
-                        <a class="dropdown-item" href="https://www.vogtlaendischer-orgelbau.de/startseite.html" target="_blank">Vogtländischer Orgelbau</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="impressum.html">Impressum</a>
-                </li>
-            </ul>
+          </button>
         </div>
+      </div>
+      <div
+        class="collapse navbar-collapse flex-grow-1 text-right"
+        id="myNavbar"
+      >
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown1"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Spenden/Pfeifenpatenschaften
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <a
+                class="dropdown-item"
+                href="assets/files/Spendenstand.pdf"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Spendenstand
+              </a>
+              <a
+                class="dropdown-item"
+                href="assets/files/Pfeifenübersicht.pdf"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Pfeifenübersicht
+              </a>
+              <a
+                class="dropdown-item"
+                href="spendenformular.html"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Formular
+              </a>
+            </div>
+          </li>
+          <!-- Deaktiviert bis wieder Veranstaltungen stattfinden dürfen
+          <li class="nav-item">
+            <a class="nav-link" href="#">Veranstaltungen</a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown2"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Medien
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+              <a class="dropdown-item" href="gallerie.html">Bilder</a>
+              <a class="dropdown-item" href="videos.html">Videos</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown3"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Links
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+              <a
+                class="dropdown-item"
+                href="http://www.lutherkirche-plauen.de"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Lutherkirche Plauen
+              </a>
+              <a
+                class="dropdown-item"
+                href="https://www.vogtlaendischer-orgelbau.de/startseite.html"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Vogtländischer Orgelbau
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="datenschutzerklaerung.html"
+              >Datenschutzerklärung</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="impressum.html">Impressum</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <div class="container-xl">
-        <div class="row mt-5 mb-5">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 text-center display-1">
-                <span>4</span>
-                <img style="height: 1.5em;" src="assets/svg/Orgel-logo-black.svg" alt="Das Logo der Orgelfreunde.">
-                <span>4</span>
-            </div>
-            <div class="col-md-3"></div>
+      <div class="row mt-5 mb-5">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 text-center display-1">
+          <span>4</span>
+          <img
+            style="height: 1.5em"
+            src="assets/svg/Orgel-logo-black.svg"
+            alt="Das Logo der Orgelfreunde."
+          />
+          <span>4</span>
         </div>
-        <div class="row mb-5">
-            <div class="col-md-2"></div>
-            <div class="col-md-8 text-center display-4">Seite leider nicht gefunden.</div>
-            <div class="col-md-2"></div>
+        <div class="col-md-3"></div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 text-center display-4">
+          Seite leider nicht gefunden.
         </div>
-        <div class="row mb-5">
-            <div class="col-md-3"></div>
-            <div class="col-md-6 text-center display-5">
-                <a href="index.html"><span>&raquo;</span>Zurück zur Startseite<span>&laquo;</span></a>
-            </div>
-            <div class="col-md-3"></div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 text-center display-5">
+          <a href="index.html"
+            ><span>&raquo;</span>Zurück zur Startseite<span>&laquo;</span></a
+          >
         </div>
+        <div class="col-md-3"></div>
+      </div>
     </div>
 
-    <footer>
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-md-4">
-                    <a class="footer-brand" href="index.html" title="Startseite">
-                        <img src="assets/svg/Orgel-logo-bright.svg" alt="">
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <h3>Kontakt:</h3>
-                    <div class="lead">Ev.-Luth.Lutherkirchgemeinde</div>
-                    <div class="lead">Dobenaustraße 12 (Lutherhaus)</div>
-                    <div class="lead">08523 Plauen</div>
-                    <br>
-                    <div>
-                        <a href="tel:03741226232" class="lead">Tel.: 03741 / 22 62 32</a>
-                    </div>
-                    <div>
-                        <a href="fax:03741147920" class="lead">Fax.: 03741 / 14 79 20</a>
-                    </div>
-                    <div>
-                        <a class="lead" href="mailto:kg.plauen_luther@evlks.de">Email schreiben</a><br>
-                        <a href="https://www.lutherkirche-plauen.de" class="lead">lutherkirche-plauen.de</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <h3>Bankverbindung:</h3>
-                    <div class="lead">Ev.Luth.Lutherkirche Plauen</div>
-                    <div class="lead">Sparkasse Vogtland</div>
-                    <div class="lead">IBAN: DE10 8705 8000 3000 0051 60</div>
-                    <div class="lead">BIC/SWIFT: WELA DED1 PLX</div>
-                    <div class="lead">Zahlungsgrund: Orgel</div>
-                    <div class="lead">Bitte Name und Adresse angeben.</div>
-                </div>
+    <footer class="bg-primary">
+      <div class="container-xl pt-5 pb-5">
+        <div class="row">
+          <div class="col-md-4">
+            <a
+              class="footer-brand"
+              href="https://www.lutherorgel-plauen.de"
+              title="Startseite"
+            >
+              <img src="assets/svg/organ-logo-bright.svg" alt="" />
+            </a>
+          </div>
+          <div class="col-md-4">
+            <h3>Kontakt:</h3>
+            <div class="lead">Ev.-Luth.Lutherkirchgemeinde</div>
+            <div class="lead">Dobenaustraße 12 (Lutherhaus)</div>
+            <div class="lead">08523 Plauen</div>
+            <br />
+            <div>
+              <a href="tel:03741226232" class="lead">Tel.: 03741 / 22 62 32</a>
             </div>
+            <div>
+              <a href="fax:03741147920" class="lead">Fax.: 03741 / 14 79 20</a>
+            </div>
+            <div>
+              <a class="lead" href="mailto:kg.plauen_luther@evlks.de"
+                >Email schreiben</a
+              ><br />
+              <a href="https://www.lutherkirche-plauen.de" class="lead"
+                >lutherkirche-plauen.de</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h3>Bankverbindung:</h3>
+            <div class="lead">Ev.Luth.Lutherkirche Plauen</div>
+            <div class="lead">Sparkasse Vogtland</div>
+            <div class="lead">IBAN: DE10 8705 8000 3000 0051 60</div>
+            <div class="lead">BIC/SWIFT: WELA DED1 PLX</div>
+            <div class="lead">Zahlungsgrund: Orgel</div>
+            <div class="lead">Bitte Name und Adresse angeben.</div>
+          </div>
         </div>
+      </div>
     </footer>
 
-    <script src="assets/js/libs/jquery/jquery.slim.min.js"></script>
-    <script src="assets/js/libs/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/libs/simpleLightbox-2.1.0/dist/simpleLightbox.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+    <script src="dist/bundle.js"></script>
+  </body>
 </html>
