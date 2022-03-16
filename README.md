@@ -1,4 +1,7 @@
-# Website
+# Website (Archiviert)
+* Die (statische) Webseite ist mittlerweile Archiviert und die Entwicklung findet in einem anderen Projekt statt.
+* Die hier verwendeten HTML-Seiten werden nun als Templates weiter genutzt.
+
 Das ist die Webseite der Orgelfreunde in Plauen (Vogtland)
 
 https://www.lutherorgel-plauen.de/
